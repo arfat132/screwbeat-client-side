@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../Assests/logo1.png';
 const Footer = () => {
     return (
-        <footer class="text-gray-200 body-font bg-black">
+        <footer class="text-gray-200 body-font bg-secondary">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap md:text-left text-center order-first">
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
@@ -72,7 +72,7 @@ const Footer = () => {
     </div>
             </div>
             <hr />
-  <div class="bg-black px-8">
+  <div class="bg-secondary px-8">
     <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
                     <img width="150px" src={logo} alt="" srcset="" />
       <p class="text-sm text-primary sm:ml-6 sm:mt-0 mt-4">© 2020 Tailblocks —
