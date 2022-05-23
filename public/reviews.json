@@ -1,0 +1,17 @@
+[
+    {
+        "id":1,
+        "name":"Jhon Smith",
+        "location": "California",
+        "reviews" : "Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.",
+        "img":"https://i.ibb.co/92zHq3V/people1.jpg"
+    },
+
+    {
+        "id":2,
+        "name":"Henry Smith",
+        "location": "New York",
+        "reviews" : "Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.",
+        "img":"https://i.ibb.co/c8WYkH7/people2.jpg"
+    }
+]
