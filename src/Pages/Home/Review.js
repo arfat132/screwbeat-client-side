@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Review = ({ review }) => {
-    const {img, reviews, name, location} = review;
+    const {img, reviews, name,ratings} = review;
     return (
         <div class="p-4 md:w-1/2 w-full">
             <div class="h-full bg-accent p-8 rounded">
@@ -14,7 +14,7 @@ const Review = ({ review }) => {
                     <img alt="testimonial" src={img} class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center border-2 border-primary" />
                     <span class="flex-grow flex flex-col pl-4">
                         <span class="title-font font-medium text-gray-900">{name}</span>
-                        <span class="text-gray-500 text-sm">{location}</span>
+                        <span class="text-gray-500 text-sm">{ratings}</span>
                     </span>
                 </Link>
             </div>

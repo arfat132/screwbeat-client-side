@@ -8,6 +8,7 @@ import auth from '../../Firebase/firebase.init';
 import GoogleLogo from '../../Assests/google.svg';
 import { BsEyeSlash } from "@react-icons/all-files/bs/BsEyeSlash";
 import 'react-toastify/dist/ReactToastify.css';
+import Spinner from '../Spinner/Spinner'
 
 const SignIn = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -18,7 +19,9 @@ const SignIn = () => {
     const onSubmit = data => {
         signInWithEmailAndPassword(data.email, data.password);
     };
-    const navigate = useNavigate();
+
+    let signInError;
+   const navigate = useNavigate();
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
 
@@ -36,6 +39,13 @@ const SignIn = () => {
         else {
             toast('Please enter your email address');
         };
+    }
+    if (loading || googleLoading) {
+        return <Spinner></Spinner>
+    }
+
+    if(error || googleError){
+        signInError = <p className='text-red-500 mb-2'><small>{error?.message || googleError?.message }</small></p>
     }
     return (
         < div className="w-[450px] p-8 mx-auto border-2 border-orange-400 bg-gray-50 items-center text-center shadow-xl rounded-xl my-24">
@@ -85,6 +95,7 @@ const SignIn = () => {
                         {errors.password?.type === 'minLength' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
                     </label>
                 </div>
+                {signInError}
                 <div className="text-center mb-3 pb-1 justify-between">
                     <label for="remember" class="text-sm font-medium text-primary mb-2">Don't have an account? <Link to='/signUp' className='hover:underline'>Sign Up</Link></label>
                     <br /> <button onClick={forgetPassword} className=" hover:underline text-gray-400 mt-3">Forgot password?</button>
