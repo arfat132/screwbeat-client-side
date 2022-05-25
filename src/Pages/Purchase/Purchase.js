@@ -2,49 +2,58 @@ import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useParams } from 'react-router-dom';
 import auth from '../../Firebase/firebase.init';
-import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { useForm } from 'react-hook-form';
 const Purchase = () => {
     const { id } = useParams();
+    const { register, formState: { errors }, handleSubmit } = useForm();
     const [toolsDetails, setToolsDetails] = useState({});
     const [user] = useAuthState(auth);
-    
+
     useEffect(() => {
         fetch(`http://localhost:5000/tools/${id}`)
             .then(res => res.json())
             .then(data => setToolsDetails(data))
     }, [id, toolsDetails])
 
-    const addOrders = event => {
-        console.log(event);
-        event.preventDefault();
-        
+    const onSubmit = async data => {
+
         const orderDetails = {
             name: user.displayName,
             email: user.email,
-            price:toolsDetails.price,
+            price: toolsDetails.price,
             productName: toolsDetails.name,
-            address: event.target.address.value,
-            quantity: Number(event.target.quantity.value),
-            phone: event.target.phone.value,
+            address: data.address,
+            quantity: Number(data.quantity),
+            phone: data.phone,
             img: toolsDetails.img,
             description: toolsDetails.description
         }
+
         console.log(orderDetails)
-        axios.post('http://localhost:5000/orders', orderDetails)
-            .then(response => {
-                console.log(response)
-                const { data } = response;
-                console.log(data.insertedId)
-                if (data.insertedId) {
-                    toast.success('Added Successfully!!!');
-                    event.target.reset();
+        // send to database 
+        fetch('http://localhost:5000/orders', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json',
+
+            },
+            body: JSON.stringify(orderDetails)
+        })
+            .then(res => res.json())
+            .then(inserted => {
+                if (inserted.insertedId) {
+                    toast.success('Added successfully')
                 }
-                
+                else {
+                    toast.error('Failed to add');
+                }
             })
 
     };
+
+
     return (
         <section class="text-gray-600 body-font">
             <div class="container px-12 pb-24 pt-12 mx-auto">
@@ -71,29 +80,55 @@ const Purchase = () => {
                     <div class="p-4 md:w-1/2">
                         <div class="lg:h-[400px] sm:h-[700px] shadow-md rounded-md border border-gray-200 text-start p-5">
                             <h1 className='font-bold text-2xl text-center '>Order Details</h1>
-                            <form onSubmit={addOrders}>
+                            <form onSubmit={handleSubmit(onSubmit)}>
                                 <div class="grid xl:grid-cols-2 xl:gap-6">
                                     <div class="relative z-0 w-full mb-6 group">
-                                        <input type="text" name="name" id="name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-orange-200 peer" value={user?.displayName} readOnly />
+                                        <input {...register("name")} type="text" name="name" id="name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-orange-200 peer" value={user?.displayName} readOnly />
                                     </div>
                                     <div class="relative z-0 w-full mb-6 group">
-                                        <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-orange-200 peer" value={user?.email} readOnly />
+                                        <input {...register("email")} type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-orange-200 peer" value={user?.email} readOnly />
                                     </div>
                                 </div>
                                 <div class="relative z-0 w-full mb-6 group">
-                                    <input type="text" name="address" id="address" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-orange-200 peer" placeholder=" " required="" />
+                                    <input {...register("address")} type="text" name="address"  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-orange-200 peer" placeholder=" " required="" />
                                     <label for="address" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Address</label>
                                 </div>
                                 <div class="relative z-0 w-full mb-6 group">
-                                    <input type="number" name="phone" id="phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-orange-200 peer" placeholder=" " required="" />
+                                    <input {...register("phone")} type="number" name="phone"  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-orange-200 peer" placeholder=" " required="" />
                                     <label for="phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone Number</label>
                                 </div>
                                 <div class="grid xl:grid-cols-2 xl:gap-6">
                                     <div class="relative z-0 w-full mb-6 group">
-                                        <input type="number" name="price" id="price" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-orange-200 peer" value={toolsDetails.price} readOnly />
+                                        <input {...register("price")} type="number" name="price" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-orange-200 peer" value={toolsDetails.price} readOnly />
                                     </div>
                                     <div class="relative z-0 w-full mb-6 group">
-                                        <input type="number" name="quantity" id="quantity" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-orange-200 peer" placeholder=" " required="" />
+                                        <input
+                                            type="number"
+                                            name="quantity"  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-orange-200 peer" 
+                                            {...register("quantity", {
+                                                required: {
+                                                    value: true,
+                                                    message: 'quantity is Required'
+                                                },
+                                                max: {
+                                                    value: 3,
+                                                    message: 'error message' // JS only: <p>error message</p> TS only support string
+                                                  }
+                                            },
+                                                {
+                                                    min: {
+                                                        value: 3,
+                                                        message: 'error message' // JS only: <p>error message</p> TS only support string
+                                                      }
+                                                },
+
+                                            )}
+                                           />
+                                        <label className="label">
+                                            {errors.quantity?.type === 'required' && <span className="label-text-alt text-red-500">{errors.quantity.message}</span>}
+                                            {errors.quantity?.type === 'min' && <span className="label-text-alt text-red-500">{errors.quantity.message}</span>}
+                                            {errors.quantity?.type === 'max' && <span className="label-text-alt text-red-500">{errors.quantity.message}</span>}
+                                        </label>
                                         <label for="quantity" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Quantity</label>
                                     </div>
                                 </div>
