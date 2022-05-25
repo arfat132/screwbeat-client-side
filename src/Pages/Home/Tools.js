@@ -17,7 +17,7 @@ const Tools = () => {
                 <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">  Our Best Selling Tools</h1>
                 <div class="flex flex-wrap -m-4">
                 {
-                        tools.map(tool => <Tool
+                        tools?.slice(-6).map(tool => <Tool
                             key={tool.id}
                             tool={tool}
                         ></Tool>)

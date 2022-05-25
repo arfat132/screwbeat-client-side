@@ -4,7 +4,7 @@ import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../Firebase/firebase.init';
-import { set } from 'react-hook-form';
+
 
 const AddReviews = () => {
     const [user] = useAuthState(auth);
@@ -14,7 +14,7 @@ const AddReviews = () => {
         event.preventDefault();
         const reviews = {
             name: user.displayName,
-            img: event.target.img.value,
+            img: user.photoURL,
             reviews: event.target.reviews.value,
             ratings: event.target.ratings.value,
         }

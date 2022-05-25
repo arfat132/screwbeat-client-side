@@ -7,6 +7,7 @@ import { BsEyeSlash } from "@react-icons/all-files/bs/BsEyeSlash";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import useToken from '../../Hooks/useToken';
 
 const SignUp = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -21,15 +22,18 @@ const SignUp = () => {
         await updateProfile({ displayName: data.name });
     };
 
+    const [token] = useToken(user || googleUser);
+
+
     const navigate = useNavigate();
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
 
     useEffect(() => {
-        if (user) {
+        if (token) {
             navigate(from, { replace: true });
         }
-    }, [user]);
+    }, [token]);
 
     const forgetPassword = async () => {
         if (user?.email) {

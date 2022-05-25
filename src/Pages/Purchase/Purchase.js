@@ -28,7 +28,9 @@ const Purchase = () => {
             productName: toolsDetails.name,
             address: event.target.address.value,
             quantity: Number(event.target.quantity.value),
-            phone: event.target.phone.value
+            phone: event.target.phone.value,
+            img: toolsDetails.img,
+            description: toolsDetails.description
         }
         console.log(orderDetails)
         axios.post('http://localhost:5000/orders', orderDetails)

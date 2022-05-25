@@ -11,7 +11,7 @@ const Review = ({ review }) => {
                 </svg>
                 <p class="leading-relaxed mb-6">{reviews}</p>
                 <Link to='' class="inline-flex items-center">
-                    <img alt="testimonial" src={img} class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center border-2 border-primary" />
+                    <img alt="" src={img} class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center border-2 border-primary" />
                     <span class="flex-grow flex flex-col pl-4">
                         <span class="title-font font-medium text-gray-900">{name}</span>
                         <span class="text-gray-500 text-sm">{ratings}</span>
