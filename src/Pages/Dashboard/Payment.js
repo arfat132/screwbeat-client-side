@@ -38,7 +38,7 @@ const Payment = () => {
                                     </div>
                                     <p>{orders.description}</p>
                                     <div class="flex justify-between items-center relative bottom-0 mt-5">
-                                        <span class="text-3xl font-bold text-gray-900 ">Total: ${orders.price}</span>
+                                        <span class="text-3xl font-bold text-gray-900 ">Total: ${orders.price * orders.quantity}</span>
                                     </div>
                                 </div>
                             </div>

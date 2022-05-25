@@ -9,6 +9,7 @@ import GoogleLogo from '../../Assests/google.svg';
 import { BsEyeSlash } from "@react-icons/all-files/bs/BsEyeSlash";
 import 'react-toastify/dist/ReactToastify.css';
 import Spinner from '../Spinner/Spinner'
+import useToken from '../../Hooks/useToken';
 
 const SignIn = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -20,16 +21,19 @@ const SignIn = () => {
         signInWithEmailAndPassword(data.email, data.password);
     };
 
+    const [token] = useToken(user || googleUser);
+
     let signInError;
    const navigate = useNavigate();
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
 
     useEffect(() => {
-        if (user) {
+        if (token) {
             navigate(from, { replace: true });
         }
-    }, [user]);
+    }, [token, from, navigate]);
+
 
     const forgetPassword = async () => {
         if (user?.email) {

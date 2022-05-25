@@ -19,12 +19,11 @@ const Purchase = () => {
     const addOrders = event => {
         console.log(event);
         event.preventDefault();
-        const totalPrice = toolsDetails.quantity * toolsDetails.price
-        console.log(totalPrice)
+        
         const orderDetails = {
             name: user.displayName,
             email: user.email,
-            price:totalPrice,
+            price:toolsDetails.price,
             productName: toolsDetails.name,
             address: event.target.address.value,
             quantity: Number(event.target.quantity.value),

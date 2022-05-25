@@ -33,7 +33,7 @@ const SignUp = () => {
         if (token) {
             navigate(from, { replace: true });
         }
-    }, [token]);
+    }, [token, from, navigate]);
 
     const forgetPassword = async () => {
         if (user?.email) {
