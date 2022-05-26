@@ -13,7 +13,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className="navbar bg-base-100 shadow-md px-12 z-40">
+        <div className="navbar bg-base-100 shadow-md sm:px-0 lg:px-12 z-40 bg-opacity-60">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -25,6 +25,23 @@ const Navbar = () => {
                         <li><Link to='/about'>ABout</Link></li>
                         <li><Link to=''>Blogs</Link></li>
                         <li><Link to=''>Contact</Link></li>
+                        {user?.uid ?
+                        <>
+                            <Link to="/dashboard" className="mr-5 items-center">Dashboard</Link>
+                            <Link to="/signIn" onClick={logout} className="md:border-l md:border-gray-400 font-bold uppercase inline-flex items-center bg-none border-0 py-1 px-3 focus:outline-none rounded text-primary mt-4 md:mt-0">Sign Out
+                                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </Link>
+
+                        </>
+                        :
+                        <Link to="/signIn" className="md:border-l md:border-gray-400 font-bold uppercase inline-flex items-center bg-none border-0 py-1 px-3 focus:outline-none rounded text-primary mt-4 md:mt-0">Sign In
+                            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </Link>
+                    }
                     </ul>
                 </div>
                 <Link to='' className="normal-case w-52"><img src={logo} alt="" srcset="" /></Link>
