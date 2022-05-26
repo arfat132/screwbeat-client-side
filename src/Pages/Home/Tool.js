@@ -11,7 +11,7 @@ const Tool = ({ tool }) => {
     return (
         <div class="p-4 md:w-1/3">
             <div class="h-[550px] shadow-md rounded-md border border-gray-200">
-                <img class="p-8 w-80 mx-auto" src={img} alt="product image" />
+                <img class="p-8 w-80 mx-auto" src={img} alt="" />
                 <div class="px-5">
                     <h5 class="text-xl font-semibold tracking-tight text-gray-900">{name}</h5>
                     <div class="flex items-center mt-2.5 mb-5">

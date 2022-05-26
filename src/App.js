@@ -2,9 +2,8 @@ import './App.css';
 import { Routes, Route } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import Navbar from './shared/Navbar';
-import SubNavbar from './shared/SubNavbar';
 import Footer from './shared/Footer';
-import Blogs from './Pages/Blogs/Blogs';
+import Portfolio from './Pages/Portfolio/Portfolio';
 import NotFound from './Pages/NotFound/NotFound';
 import SignIn from './Pages/Auth/SignIn';
 import SignUp from './Pages/Auth/SignUp';
@@ -18,16 +17,16 @@ import AddProduct from './Pages/Dashboard/AddProduct';
 import ManageOrders from './Pages/Dashboard/ManageOrders';
 import ManageProducts from './Pages/Dashboard/ManageProducts';
 import MakeAdmin from './Pages/Dashboard/MakeAdmin';
-import { Rating } from './Pages/Dashboard/RatingStyles';
 import Payment from './Pages/Dashboard/Payment';
+import Blogs from './Pages/Blogs/Blogs';
 
 function App() {
   return (
     <div>
-      <SubNavbar></SubNavbar>
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/portfolio" element={<Portfolio />}></Route>
         <Route path="/blogs" element={<Blogs />}></Route>
         <Route path="/dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} >
           <Route index element={<MyProfile></MyProfile>}></Route>
@@ -44,7 +43,6 @@ function App() {
             <Purchase />
           </RequireAuth>
         } />
-        <Route path="/ratings" element={<Rating />}></Route>
         <Route path="/signIn" element={<SignIn />}></Route>
         <Route path="/signUp" element={<SignUp />}></Route>
         <Route path="*" element={<NotFound />}></Route>

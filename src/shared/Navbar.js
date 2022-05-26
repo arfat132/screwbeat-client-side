@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal p-0 ml-50 font-bold uppercase text-secondary">
                     <li><Link to=''>Home</Link></li>
-                    <li><Link to='/about'>ABout</Link></li>
+                    <li><Link to='/portfolio'>Portfolio</Link></li>
                     <li><Link to='/blogs'>Blogs</Link></li>
                     <li><Link to=''>Contact</Link></li>
                     {user?.uid ?
