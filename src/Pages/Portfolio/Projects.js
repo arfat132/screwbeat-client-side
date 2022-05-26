@@ -15,7 +15,7 @@ const Projects = () => {
                             <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://i.ibb.co/0f5kvw8/Screenshot-1.jpg" alt="blog" />
                             <div className="p-6">
                                 <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">React Tailwind Firebase Express MongoDB</h2>
-                                <a href="https://quanta-auth.web.app/" className="title-font text-lg font-medium text-gray-900 mb-3">Quanta</a>
+                                <a href="https://quanta-auth.web.app/" className="title-font text-lg font-medium mb-3 text-primary underline">Quanta</a>
                                 <p className="leading-relaxed mb-3">This is a warehouse inventory website. In this website has navbar a static slider, about section, six inventory items, a logos section and footer section.</p>
 
                             </div>
@@ -26,7 +26,7 @@ const Projects = () => {
                             <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://i.ibb.co/R27zXsw/Screenshot-2.jpg" alt="blog" />
                             <div className="p-6">
                                 <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">React Tailwind Firebase</h2>
-                                <a href="https://core-realtor-auth.web.app/" className="title-font text-lg font-medium text-gray-900 mb-3">Core Realator</a>
+                                <a href="https://core-realtor-auth.web.app/" className="title-font text-lg font-medium  mb-3 text-primary underline">Core Realator</a>
                                 <p className="leading-relaxed mb-3">This is a realtor independent website. In this website a realtor provides 3 services.</p>
 
                             </div>
@@ -37,7 +37,7 @@ const Projects = () => {
                             <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://i.ibb.co/D4S6qfP/Screenshot-3.jpg" alt="blog" />
                             <div className="p-6">
                                 <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">HTML CSS</h2>
-                                <a href="https://arfat132.github.io/influencer-product/" className="title-font text-lg font-medium text-gray-900 mb-3">Influencer Prtoducts</a>
+                                <a href="https://arfat132.github.io/influencer-product/" className="title-font text-lg font-medium  mb-3 text-primary underline">Influencer Prtoducts</a>
                                 <p className="leading-relaxed mb-3">This is a influencer product website using by only css and html.</p>
                             </div>
                         </div>
