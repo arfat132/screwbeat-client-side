@@ -1,19 +1,15 @@
 [
     {
-        "id":1,
         "name":"Jhon Smith",
-        "location": "California",
-        "ratings":"5 out 5",
-        "reviews" : "Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.",
+        "ratings":5,
+        "reviews" : "Highly disappointed by the pentalobe P2/0.8mm bits. All the 3 bits got bent without opening even a single screw. Not at all recommended for pentalobe bits.",
         "img":"https://i.ibb.co/92zHq3V/people1.jpg"
     },
 
     {
-        "id":2,
         "name":"Henry Smith",
-        "location": "New York",
-        "ratings":"4 out 5",
-        "reviews" : "Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.",
+        "ratings":4,
+        "reviews" : "Lots combination & school boys should lots easier to crack their smart phones with them.",
         "img":"https://i.ibb.co/c8WYkH7/people2.jpg"
     }
 ]

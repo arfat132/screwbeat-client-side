@@ -104,7 +104,7 @@ const SignUp = () => {
                 </div>
                 <input
                     className="border border-gray-300 bg-primary text-white text-sm uppercase font-bold rounded-lg block w-full p-2.5"
-                    type="submit" />
+                    type="submit" value="Sign Up" />
 
             </form>
             <div className='flex font-bold items-center my-3 text-primary'>

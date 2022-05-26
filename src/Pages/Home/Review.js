@@ -14,7 +14,7 @@ const Review = ({ review }) => {
                     <img alt="" src={img} class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center border-2 border-primary" />
                     <span class="flex-grow flex flex-col pl-4">
                         <span class="title-font font-medium text-gray-900">{name}</span>
-                        <span class="text-primary text-medium">Ratings {ratings}</span>
+                        <span class="text-primary text-medium">{ratings} out of 5</span>
                     </span>
                 </Link>
             </div>

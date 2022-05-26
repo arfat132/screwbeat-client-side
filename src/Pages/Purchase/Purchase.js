@@ -91,11 +91,11 @@ const Purchase = () => {
                                     </div>
                                 </div>
                                 <div class="relative z-0 w-full mb-6 group">
-                                    <input {...register("address")} type="text" name="address"  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-orange-200 peer" placeholder=" " required="" />
+                                    <input {...register("address")} type="text" name="address" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-orange-200 peer" placeholder=" " required="" />
                                     <label for="address" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Address</label>
                                 </div>
                                 <div class="relative z-0 w-full mb-6 group">
-                                    <input {...register("phone")} type="number" name="phone"  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-orange-200 peer" placeholder=" " required="" />
+                                    <input {...register("phone")} type="number" name="phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-orange-200 peer" placeholder=" " required="" />
                                     <label for="phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone Number</label>
                                 </div>
                                 <div class="grid xl:grid-cols-2 xl:gap-6">
@@ -105,30 +105,27 @@ const Purchase = () => {
                                     <div class="relative z-0 w-full mb-6 group">
                                         <input
                                             type="number"
-                                            name="quantity"  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-orange-200 peer" 
-                                            {...register("quantity", {
-                                                required: {
-                                                    value: true,
-                                                    message: 'quantity is Required'
-                                                },
-                                                max: {
-                                                    value: 103,
-                                                    message: 'error message' 
-                                                  }
-                                            },
-                                                {
+                                            name="quantity" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-orange-200 peer"
+                                            {...register
+                                                ("quantity", {
+                                                    required: {
+                                                        value: true,
+                                                        message: 'quantity is Required'
+                                                    },
+                                                    max: {
+                                                        value: toolsDetails.quantity,
+                                                        message: 'Tools not available at this quantity'
+                                                    },
                                                     min: {
                                                         value: 12,
-                                                        message: 'error message' 
-                                                      }
-                                                },
-
-                                            )}
-                                           />
+                                                        message: 'Please purchase at 12 pieces'
+                                                    }
+                                                })}
+                                        />
                                         <label className="label">
                                             {errors.quantity?.type === 'required' && <span className="label-text-alt text-red-500">{errors.quantity.message}</span>}
-                                            {errors.quantity?.type === 'min' && <span className="label-text-alt text-red-500">{errors.quantity.message}</span>}
-                                            {errors.quantity?.type === 'max' && <span className="label-text-alt text-red-500">{errors.quantity.message}</span>}
+                                            {errors.quantity?.type === 'max' && <span className="label-text-alt text-red-500">{errors?.quantity?.message}</span>}
+                                            {errors.quantity?.type === 'min' && <span className="label-text-alt text-red-500">{errors?.quantity?.message}</span>}
                                         </label>
                                         <label for="quantity" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Quantity</label>
                                     </div>

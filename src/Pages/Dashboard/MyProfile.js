@@ -34,9 +34,54 @@ const MyProfile = () => {
                     toast.success('Added Successfully!!!');
                     event.target.reset();
                 }
-            })
-
+            });
+        
+            axios.post(`http://localhost:5000/myProfile`, myProfile)
+            .then(response => {
+                console.log(response)
+                const { data } = response;
+                console.log(data.insertedId)
+                if (data.insertedId) {
+                    toast.success('Added Successfully!!!');
+                    event.target.reset();
+                }
+            });
     };
+
+    // const updateProfile = event => {
+    //     event.preventDefault();
+
+    //     const myProfile = {
+    //         name: user.displayName,
+    //         email: user.email,
+    //         address: event.target.address.value,
+    //         phone: event.target.phone.value,
+    //         country: event.target.country.value,
+    //         website: event.target.website.value,
+    //         date: event.target.date.value,
+    //         educationLevel: event.target.educationLevel.value,
+    //         institute: event.target.institute.value,
+    //         passingYear: event.target.passingYear.value,
+    //         currentYear: event.target.currentYear.value,
+    //     }
+    //     console.log(myProfile)
+
+    //     const url = `http://localhost:5000/myProfile${id}`;
+    //     fetch(url, {
+    //         method: 'PUT',
+    //         headers: {
+    //             'content-type': 'application/json'
+    //         },
+    //         body: JSON.stringify(myProfile)
+    //     })
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             console.log('success', data);
+    //             toast.info('Update Successfully');
+    //             event.target.reset();
+    //         })
+
+    // }
     return (
         <>
             <div className='px-12 py-12 mx-12 mt-12 shadow-md border border-gray-100'>
