@@ -26,8 +26,8 @@ const ManageProducts = () => {
         }
     }
     return (
-        <div class="overflow-x-auto px-12 pt-12">
-            <table class="table table-compact w-full">
+        <div className="overflow-x-auto px-12 pt-12">
+            <table className="table table-compact w-full">
                 <thead>
                     <tr>
                         <th></th>

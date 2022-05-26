@@ -24,37 +24,35 @@ const Navbar = () => {
                         <li><Link to='/blogs'>Blogs</Link></li>
                         <li><Link to='/about'>ABout</Link></li>
                         <li><Link to=''>Blogs</Link></li>
-                        <li><Link to=''>Contact</Link></li>
                         {user?.uid ?
-                        <>
-                            <Link to="/dashboard" className="mr-5 items-center">Dashboard</Link>
-                            <Link to="/signIn" onClick={logout} className="md:border-l md:border-gray-400 font-bold uppercase inline-flex items-center bg-none border-0 py-1 px-3 focus:outline-none rounded text-primary mt-4 md:mt-0">Sign Out
+                            <>
+                                <Link to="/dashboard" className="mr-5 items-center">Dashboard</Link>
+                                <Link to="/signIn" onClick={logout} className="md:border-l md:border-gray-400 font-bold uppercase inline-flex items-center bg-none border-0 py-1 px-3 focus:outline-none rounded text-primary mt-4 md:mt-0">Sign Out
+                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </Link>
+
+                            </>
+                            :
+                            <Link to="/signIn" className="md:border-l md:border-gray-400 font-bold uppercase inline-flex items-center bg-none border-0 py-1 px-3 focus:outline-none rounded text-primary mt-4 md:mt-0">Sign In
                                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
                             </Link>
-
-                        </>
-                        :
-                        <Link to="/signIn" className="md:border-l md:border-gray-400 font-bold uppercase inline-flex items-center bg-none border-0 py-1 px-3 focus:outline-none rounded text-primary mt-4 md:mt-0">Sign In
-                            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                        </Link>
-                    }
+                        }
                     </ul>
                 </div>
-                <Link to='' className="normal-case w-52"><img src={logo} alt="" srcset="" /></Link>
+                <Link to='' className="normal-case w-52"><img src={logo} alt="" srcSet="" /></Link>
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal p-0 ml-50 font-bold uppercase text-secondary">
                     <li><Link to=''>Home</Link></li>
                     <li><Link to='/portfolio'>Portfolio</Link></li>
                     <li><Link to='/blogs'>Blogs</Link></li>
-                    <li><Link to=''>Contact</Link></li>
                     {user?.uid ?
                         <>
-                            <Link to="/dashboard" className="mr-5 font-bold uppercase text-secondary items-center mt-3">Dashboard</Link>
+                            <Link to="/dashboard" className="mr-5 font-bold uppercase text-secondary items-center mt-3 ml-2">Dashboard</Link>
                             <Link to="/signIn" onClick={logout} className="md:border-l md:border-gray-400 font-bold uppercase inline-flex items-center bg-none border-0 py-1 px-3 focus:outline-none rounded text-primary mt-4 md:mt-0">Sign Out
                                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>

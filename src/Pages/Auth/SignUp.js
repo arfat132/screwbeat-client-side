@@ -48,8 +48,8 @@ const SignUp = () => {
     return (
         < div className="w-[450px] p-8 mx-auto border-2 border-orange-400 bg-gray-50 items-center text-center shadow-xl rounded-xl my-24">
             <h1 className='w-56 text-center rounded p-2 mx-auto mb-8 mt-[-50px] bg-primary text-white font-medium text-xl'>Sign Up</h1>
-            <div class="avatar mb-8">
-                <div class="w-28 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+            <div className="avatar mb-8">
+                <div className="w-28 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                     <img src="https://api.lorem.space/image/face?hash=3174" />
                 </div>
             </div>
@@ -99,7 +99,7 @@ const SignUp = () => {
                     </label>
                 </div>
                 <div className="text-center mb-3 pb-1 justify-between">
-                    <label for="remember" class="text-sm font-medium text-primary mb-2">Already Have an account? <Link to='/signIn' className='hover:underline'>Sign In</Link></label>
+                    <label htmlFor="remember" className="text-sm font-medium text-primary mb-2">Already Have an account? <Link to='/signIn' className='hover:underline'>Sign In</Link></label>
                     <br /> <button onClick={forgetPassword} className=" hover:underline text-gray-400 mt-3">Forgot password?</button>
                 </div>
                 <input

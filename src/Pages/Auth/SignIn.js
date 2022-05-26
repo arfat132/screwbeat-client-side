@@ -24,7 +24,7 @@ const SignIn = () => {
     const [token] = useToken(user || googleUser);
 
     let signInError;
-   const navigate = useNavigate();
+    const navigate = useNavigate();
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
 
@@ -48,14 +48,14 @@ const SignIn = () => {
         return <Spinner></Spinner>
     }
 
-    if(error || googleError){
-        signInError = <p className='text-red-500 mb-2'><small>{error?.message || googleError?.message }</small></p>
+    if (error || googleError) {
+        signInError = <p className='text-red-500 mb-2'><small>{error?.message || googleError?.message}</small></p>
     }
     return (
         < div className="w-[450px] p-8 mx-auto border-2 border-orange-400 bg-gray-50 items-center text-center shadow-xl rounded-xl my-24">
             <h1 className='w-56 text-center rounded p-2 mx-auto mb-8 mt-[-50px] bg-primary text-white font-medium text-xl'>Sign In</h1>
-            <div class="avatar mb-8">
-                <div class="w-28 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+            <div className="avatar mb-8">
+                <div className="w-28 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                     <img src="https://api.lorem.space/image/face?hash=3174" />
                 </div>
             </div>
@@ -101,12 +101,12 @@ const SignIn = () => {
                 </div>
                 {signInError}
                 <div className="text-center mb-3 pb-1 justify-between">
-                    <label for="remember" class="text-sm font-medium text-primary mb-2">Don't have an account? <Link to='/signUp' className='hover:underline'>Sign Up</Link></label>
+                    <label htmlFor="remember" className="text-sm font-medium text-primary mb-2">Don't have an account? <Link to='/signUp' className='hover:underline'>Sign Up</Link></label>
                     <br /> <button onClick={forgetPassword} className=" hover:underline text-gray-400 mt-3">Forgot password?</button>
                 </div>
                 <input
                     className="border border-gray-300 bg-primary text-white text-sm uppercase font-bold rounded-lg block w-full p-2.5"
-                    type="submit" value="Sign In"/>
+                    type="submit" value="Sign In" />
 
             </form>
             <div className='flex font-bold items-center my-3 text-primary'>

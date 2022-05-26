@@ -11,14 +11,14 @@ const Reviews = () => {
     }, [])
 
     return (
-        <section class="text-gray-600 body-font px-12">
-            <div class="container px-5 py-24 mx-auto">
-                <h2 class="text-md text-primary tracking-widest font-bold title-font mb-1 text-center uppercase">Testimonials</h2>
-                <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">  Customers Reviews</h1>
-                <div class="flex flex-wrap -m-4">
+        <section className="text-gray-600 body-font px-12">
+            <div className="container px-5 py-24 mx-auto">
+                <h2 className="text-md text-primary tracking-widest font-bold title-font mb-1 text-center uppercase">Testimonials</h2>
+                <h1 className="text-3xl font-medium title-font text-gray-900 mb-12 text-center">  Customers Reviews</h1>
+                <div className="flex flex-wrap -m-4">
                     {
                         reviews.map(review => <Review
-                            key={review.id}
+                            key={review._id}
                             review={review}
                         ></Review>)
                     }

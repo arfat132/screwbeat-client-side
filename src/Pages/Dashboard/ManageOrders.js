@@ -21,14 +21,14 @@ const ManagemanageOrders = () => {
                 .then(res => res.json())
                 .then(data => {
                     console.log(data);
-                    const remaining = manageOrders.filter(inventoryItem => inventoryItem._id !== id);
+                    const remaining = manageOrders.filter(manageItem => manageItem._id !== id);
                     setManageOrders(remaining);
                 })
         }
     }
     return (
-        <div class="overflow-x-auto px-12 pt-12">
-            <table class="table table-compact w-full">
+        <div className="overflow-x-auto px-12 pt-12">
+            <table className="table table-compact w-full">
                 <thead>
                     <tr>
                         <th></th>
@@ -51,8 +51,15 @@ const ManagemanageOrders = () => {
                                 <td>{manageOrder.price}</td>
                                 <td>{manageOrder.quantity}</td>
                                 <td>{manageOrder.quantity * manageOrder.price}</td>
-                                <td> <button className="text-white font-bold rounded-lg text-md  px-2 py-2 text-center bg-blue-800 ml-2 uppercase">Unpaid</button></td>
-                                <td><button onClick={() => handleDelete(manageOrder._id)} className="text-white font-bold rounded-lg text-xl  p-2.5 text-center bg-red-700 ml-2"><RiDeleteBin6Line /></button></td>
+                                <td>
+                                    {(manageOrder.price && manageOrder.paid) && <button className="text-white font-medium rounded-lg text-md  px-2.5 py-1 text-center bg-orange-400 ml-2 uppercase">Pending</button>}
+                                    {(manageOrder.price && !manageOrder.paid) && <button className="text-white font-medium rounded-lg text-md  px-2.5 py-1 text-center bg-blue-600 ml-2 uppercase">Unpaid</button>}
+                                </td>
+                                <td>
+                                    {!manageOrder.paid && <button onClick={() => handleDelete(manageOrder._id)} className="text-white font-bold rounded-lg text-xl  p-2.5 text-center bg-red-700 ml-2"><RiDeleteBin6Line /></button>}
+                                    {(manageOrder.price && manageOrder.paid) && <button onClick={() => handleDelete(manageOrder._id)} className="text-white font-bold rounded-lg text-xl  p-2.5 text-center bg-gray-700 ml-2" disabled><RiDeleteBin6Line /></button>}
+
+                                </td>
                             </tr>)
                     }
                 </tbody>

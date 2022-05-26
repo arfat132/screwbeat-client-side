@@ -18,7 +18,7 @@ const MyOrders = () => {
             const { data } = await axios.get(url, {
                 method: 'GET',
                 headers: {
-                    'authorization':`Bearer ${localStorage.getItem('accessToken')}`
+                    'authorization': `Bearer ${localStorage.getItem('accessToken')}`
                 }
             });
             setOrders(data);
@@ -43,9 +43,11 @@ const MyOrders = () => {
                 });
         };
     };
+
+
     return (
-        <div class="overflow-x-auto px-12 pt-12">
-            <table class="table table-compact w-full">
+        <div className="overflow-x-auto px-12 pt-12">
+            <table className="table table-compact w-full">
                 <thead>
                     <tr>
                         <th></th>
@@ -69,16 +71,16 @@ const MyOrders = () => {
                                 <td>{order.price}</td>
                                 <td>{order.quantity}</td>
                                 <td>{order.quantity * order.price}</td>
-                                <td> {!order.paid && <Link to={`/dashboard/payment/${order._id}`}><button className="text-white font-bold rounded-lg text-md  px-2 py-2 uppercase text-center bg-blue-800 ml-2">Pay</button></Link>}
-                                    {(order.price && order.paid) && <p><span className="text-white font-bold rounded-lg text-md  px-2 py-2 uppercase text-center bg-green-600 ml-2">Paid</span></p>}
+                                <td> {!order.paid && <Link to={`/dashboard/payment/${order._id}`}><button className="text-white font-medium rounded-lg text-md  px-2.5 py-1 text-center bg-orange-400 ml-2 uppercase ml-2">Pay</button></Link>}
+                                    {(order.price && order.paid) && <p><span className="text-white font-medium rounded-lg text-md  px-2.5 py-1 text-center bg-green-600 ml-2 uppercase">Paid</span></p>}
                                 </td>
-                                <td> 
+                                <td>
                                     {(order.price && order.paid) && <p><span className='text-gray-900 font-bold'>{order.transactionId}</span></p>}
                                 </td>
                                 <td>
-                                {!order.paid &&  <button onClick={() => handleDelete(order._id)} className="text-white font-bold rounded-lg text-xl  p-2.5 text-center bg-red-700 ml-2"><RiDeleteBin6Line /></button>}
+                                    {!order.paid && <button onClick={() => handleDelete(order._id)} className="text-white font-bold rounded-lg text-xl  p-2.5 text-center bg-red-700 ml-2"><RiDeleteBin6Line /></button>}
                                     {(order.price && order.paid) && <button onClick={() => handleDelete(order._id)} className="text-white font-bold rounded-lg text-xl  p-2.5 text-center bg-gray-700 ml-2" disabled><RiDeleteBin6Line /></button>}
-                                    
+
                                 </td>
                             </tr>)
                     }
