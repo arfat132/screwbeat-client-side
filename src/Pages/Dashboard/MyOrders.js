@@ -13,7 +13,7 @@ const MyOrders = () => {
 
         const getOrders = async () => {
             const email = user?.email;
-            const url = `http://localhost:5000/myOrders?email=${email}`;
+            const url = `https://stormy-dusk-98977.herokuapp.com/myOrders?email=${email}`;
 
             const { data } = await axios.get(url, {
                 method: 'GET',
@@ -31,7 +31,7 @@ const MyOrders = () => {
 
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://stormy-dusk-98977.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

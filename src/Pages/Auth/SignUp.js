@@ -50,7 +50,7 @@ const SignUp = () => {
             <h1 className='w-56 text-center rounded p-2 mx-auto mb-8 mt-[-50px] bg-primary text-white font-medium text-xl'>Sign Up</h1>
             <div className="avatar mb-8">
                 <div className="w-28 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                    <img src="https://api.lorem.space/image/face?hash=3174" />
+                    <img src=""  alt=''/>
                 </div>
             </div>
             <form onSubmit={handleSubmit(onSubmit)}>

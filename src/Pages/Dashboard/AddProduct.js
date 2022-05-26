@@ -33,7 +33,7 @@ const AddProduct = () => {
                     }
                     console.log(tools)
                     // send to database 
-                    fetch('http://localhost:5000/tools', {
+                    fetch('https://stormy-dusk-98977.herokuapp.com/tools', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',

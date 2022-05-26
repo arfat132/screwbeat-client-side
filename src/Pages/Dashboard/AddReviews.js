@@ -22,7 +22,7 @@ const AddReviews = () => {
 
         console.log(reviews)
         // send to database 
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://stormy-dusk-98977.herokuapp.com/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -52,7 +52,7 @@ const AddReviews = () => {
     //     }
     //     console.log(reviews)
 
-    //     axios.post('http://localhost:5000/reviews', reviews)
+    //     axios.post('https://stormy-dusk-98977.herokuapp.com/reviews', reviews)
     //         .then(response => {
     //             console.log(response)
     //             const { data } = response;
