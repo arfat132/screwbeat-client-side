@@ -4,16 +4,21 @@ import BusinessSummary from './BusinessSummary';
 import Carousel from './Carousel';
 import LogoSection from './LogoSection';
 import Reviews from './Reviews';
-import Tools from './Tools';
-
+import Info from './Info';
+import Lights from './Lights';
+import DiscountBanner from './DiscountBanner';
+import OurGallery from './OurGallery';
 const Home = () => {
     return (
         <div>
             <Carousel></Carousel>
-            <LogoSection></LogoSection>
+            <Info></Info>
             <About></About>
-            <Tools></Tools>
+            <Lights></Lights>
+            <DiscountBanner></DiscountBanner>
             <BusinessSummary></BusinessSummary>
+            <OurGallery></OurGallery>
+            <LogoSection></LogoSection>
             <Reviews></Reviews>
         </div>
     );

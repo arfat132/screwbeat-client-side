@@ -25,7 +25,7 @@ const MyProfile = () => {
             currentYear: event.target.currentYear.value,
         }
         console.log(myProfile)
-        axios.post('https://stormy-dusk-98977.herokuapp.com/myProfile', myProfile)
+        axios.post('http://localhost:5000/myProfile', myProfile)
             .then(response => {
                 console.log(response)
                 const { data } = response;
@@ -56,7 +56,7 @@ const MyProfile = () => {
         }
         console.log(updateProfile)
         const email = user.email
-        const url = `https://stormy-dusk-98977.herokuapp.com/myProfile/${email}`;
+        const url = `http://localhost:5000/myProfile/${email}`;
         fetch(url, {
             method: 'PUT',
             headers: {

@@ -5,7 +5,7 @@ const ManagemanageOrders = () => {
     const [manageOrders, setManageOrders] = useState([]);
 
     useEffect(() => {
-        fetch('https://stormy-dusk-98977.herokuapp.com/orders')
+        fetch('http://localhost:5000/orders')
             .then(res => res.json())
             .then(data => setManageOrders(data))
     }, [])
@@ -14,7 +14,7 @@ const ManagemanageOrders = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `https://stormy-dusk-98977.herokuapp.com/orders/${id}`;
+            const url = `http://localhost:5000/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

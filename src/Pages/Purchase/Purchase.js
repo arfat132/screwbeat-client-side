@@ -12,7 +12,7 @@ const Purchase = () => {
     const [user] = useAuthState(auth);
 
     useEffect(() => {
-        fetch(`https://stormy-dusk-98977.herokuapp.com/tools/${id}`)
+        fetch(`http://localhost:5000/tools/${id}`)
             .then(res => res.json())
             .then(data => setToolsDetails(data))
     }, [id, toolsDetails])
@@ -34,9 +34,9 @@ const Purchase = () => {
 
         console.log(orderDetails)
         // send to database 
-        fetch('https://stormy-dusk-98977.herokuapp.com/orders', {
+        fetch('http://localhost:5000/orders', {
             method: 'POST',
-            headers: {
+            headers: {//
                 'content-type': 'application/json',
 
             },
