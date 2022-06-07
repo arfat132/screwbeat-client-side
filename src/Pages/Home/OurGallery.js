@@ -4,7 +4,7 @@ const OurGallery = () => {
     return (
         <section class="text-gray-600 body-font">
         <div class="text-center">
-        <h1 className='text-center font-mono font-bold text-2xl'>Our Colourful Gallery</h1>
+        <h1 className='text-center font-bold text-2xl'>Our Gallery</h1>
      <p className='text-center text-gray-600 mt-2 mx-auto px-0 lg:px-80'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sint officiis animi, temporibus itaque molestias commodi ex quis harum voluptatum.</p>
    </div>
      <div class="container px-5 py-12 mx-auto flex flex-wrap">

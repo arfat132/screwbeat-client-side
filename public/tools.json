@@ -1,56 +1,74 @@
 [
     {
         "id":1,
-        "name":"Rubber Grip Screwdriver",
+        "name":"Table Lamp Set",
         "quantity": 1500,
         "minOrderQuantity": 12,
         "price": 70,
-        "description" : "Premium materials, Screwdriver bar made of 6150 chromium vanadium steel, stronger and tougher than most carbon steel.",
-        "img":"https://i.ibb.co/HFWkhNH/6-min.jpg"
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/5WBF7jt/pr-7-min.jpg"
     },
     {
         "id":2,
-        "name":"Magnetic Screwdriver",
+        "name":"Ganeed Ceiling Light",
         "quantity": 1000,
         "minOrderQuantity": 12,
         "price": 80,
-        "description" : "Ideal for home improvement tasks and are a perfect addition to any tool kit. Made of high-quality materials for extreme durability and ruggedness",
-        "img":"https://i.ibb.co/wQ0sRKB/5-min.jpg"
+        "description" : "Ganeed Ceiling Light, Modern Black Sputnik Chandeliers, 8-Light Semi Flush Mount Ceiling Lamp Industrial Ceiling Lighting Fixtures for Bedroom Kitchen Living Room Restaurant, E27 Base",
+        "img":"https://i.ibb.co/b78XXQn/pr2-min.jpg"
     },
     {
         "id":3,
-        "name":"Slotted Straight Tipped Screwdriver ",
+        "name":"Pendant  Lights ",
         "quantity": 1200,
         "minOrderQuantity": 12,
         "price": 55,
-        "description" : "High-performance alloy steel blade with chrome plating, entirely hardened for high protection against corrosion, long life tool.",
-        "img":"https://i.ibb.co/TtQpNjy/4-min.jpg"
+        "description" : "YFMYY Ganeep Creative Single Head Wrought Iron Balcony Chandelier Restaurant Cafe Bar Pendant  Lights Retro Personality Loft Industrial Style Hanging  lights",
+        "img":"https://i.ibb.co/qjPC812/pr3-min.jpg"
     },
     {
         "id":4,
-        "name":"Pozidriv Screwdriver",
+        "name":"Vintage Ceiling Light",
         "quantity": 1600,
         "minOrderQuantity": 12,
         "price": 60,
-        "description" : "Easy to choose the right tip with the colour-coded handle and permanent symbol on the domed end  for high protection against corrosion.",
-        "img":" https://i.ibb.co/34wyRzd/3-min.jpg"
+        "description" : "Oninio Vintage Ceiling Light, Semi Flush Mount Wood Ceiling Lamp, 3-Light Rustic Chandelier Farmhouse Ceiling Lighting Fixtures for Kitchen Dining Room Hallway Entryway Bedroom.",
+        "img":"https://i.ibb.co/SJg9GbP/pr1-min.jpg"
     },
     {
         "id":5,
-        "name":"Stanely Screwdriver",
+        "name":"Reading chair floor lamp",
         "quantity": 1100,
         "minOrderQuantity": 12,
         "price": 40,
-        "description" : "Ergonomic non-slip and soft handle which is made of pp+tpr materials, let you feel soft and comfortable at work.",
-        "img":" https://i.ibb.co/QfXLS5c/2-min.jpg"
+        "description" : " Floor lamps can provide overall lighting for watching TV or sitting comfortably with family and friends. You can set them up around the room to provide lighting based on the actions that you do in the room. ",
+        "img":"https://i.ibb.co/3MsRSjX/pr4-min.jpg"
     },
     {
         "id":6,
-        "name":" Yellow Screwdriver",
+        "name":"Living room lamp",
         "quantity": 900,
         "minOrderQuantity": 12,
         "price": 30,
-        "description" : "Three-component handle for maximum user comfort, soft material with ridged surface provides superior grip and greater force transmission.",
-        "img":"https://i.ibb.co/2SQnnhg/1-min.jpg"
+        "description" : "Such a minimalistic but stylish chandelier lighting fixture is an ideal lighting choice for your space while a great decoration element to your house, adding more elegance and charm to your home.It fits for your kitchen, entryway, and bedroom. ",
+        "img":"https://i.ibb.co/dG7vgm3/pr5-min.jpg"
+    },
+    {
+        "id":6,
+        "name":"Table reading lamp",
+        "quantity": 900,
+        "minOrderQuantity": 12,
+        "price": 30,
+        "description" : "CLASSIC TABLE LAMP IN ANY DECOR: The nightstand desk lamp is designed for a modern & generous look. This charming design showcases a small metal base with a beige lamp shade for an added elegant touch.",
+        "img":"https://i.ibb.co/ypHjVgH/pr6-min.jpg"
+    },
+    {
+        "id":6,
+        "name":"Elegant Liviging room lamp",
+        "quantity": 900,
+        "minOrderQuantity": 12,
+        "price": 30,
+        "description" : "Fashion Style Modern sputnik chandelier, surrounded by eight golden iron rods and bulbs, looks up like a star explosion. It combining contemporary and elegant style, suitable for living room lighting decoration.",
+        "img":"https://i.ibb.co/BZ0Lq49/pr8-min.jpg"
     }
 ]
