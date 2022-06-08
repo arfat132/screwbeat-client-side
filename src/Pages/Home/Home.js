@@ -6,13 +6,17 @@ import Info from './Info';
 import Lights from './Lights';
 import DiscountBanner from './DiscountBanner';
 import OurGallery from './OurGallery';
+import WorkProcessing from './WorkProcessing';
+import NewArrivals from './NewArrivals';
 const Home = () => {
     return (
         <div>
             <Carousel></Carousel>
             <Info></Info>
+            <WorkProcessing></WorkProcessing>
             <Lights></Lights>
             <DiscountBanner></DiscountBanner>
+            <NewArrivals></NewArrivals>
             <BusinessSummary></BusinessSummary>
             <OurGallery></OurGallery>
             <Reviews></Reviews>

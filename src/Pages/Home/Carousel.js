@@ -4,7 +4,7 @@ const Carousel = () => {
     return (
         <div className="carousel w-full">
             <div className="carousel-item relative w-full">
-                <div className="hero h-[800px] bg-[url(https://media.istockphoto.com/photos/decorative-ceiling-lights-hanging-lights-on-dark-background-with-copy-picture-id1182466501?b=1&k=20&m=1182466501&s=170667a&w=0&h=Fky-nkC7ooG55pZOJWdAVc5-9tOysJ4ybX5XiuDhT18=)]">
+                <div className="hero h-[800px] bg-[url(https://cdn.webshopapp.com/shops/192182/files/310112799/900x900x2/industrial-ceiling-light-valley.jpg)]">
                     <div className="hero-overlay bg-opacity-60"></div>
                     <div className="hero-content text-left  text-neutral-content">
                         <div className="">
