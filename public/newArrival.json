@@ -1,0 +1,73 @@
+[
+    {
+        "id":1,
+        "name":"Table Lamp Set",
+        "quantity": 1500,
+        "minOrderQuantity": 12,
+        "price": 70,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/5WBF7jt/pr-7-min.jpg"
+    },
+    {
+        "id":2,
+        "name":"Ganeed Ceiling Light",
+        "quantity": 1000,
+        "minOrderQuantity": 12,
+        "price": 80,
+        "description" : "Ganeed Ceiling Light, Modern Black Sputnik Chandeliers, 8-Light Semi Flush Mount Ceiling Lamp Industrial Ceiling Lighting Fixtures for Bedroom Kitchen Living Room Restaurant, E27 Base",
+        "img":"https://i.ibb.co/b78XXQn/pr2-min.jpg"
+    },
+    {
+        "id":3,
+        "name":"Pendant  Lights ",
+        "quantity": 1200,
+        "minOrderQuantity": 12,
+        "price": 55,
+        "description" : "YFMYY Ganeep Creative Single Head Wrought Iron Balcony Chandelier Restaurant Cafe Bar Pendant  Lights Retro Personality Loft Industrial Style Hanging  lights",
+        "img":"https://i.ibb.co/qjPC812/pr3-min.jpg"
+    },
+    {
+        "id":4,
+        "name":"Vintage Ceiling Light",
+        "quantity": 1600,
+        "minOrderQuantity": 12,
+        "price": 60,
+        "description" : "Oninio Vintage Ceiling Light, Semi Flush Mount Wood Ceiling Lamp, 3-Light Rustic Chandelier Farmhouse Ceiling Lighting Fixtures for Kitchen Dining Room Hallway Entryway Bedroom.",
+        "img":"https://i.ibb.co/SJg9GbP/pr1-min.jpg"
+    },
+    {
+        "id":5,
+        "name":"Reading chair floor lamp",
+        "quantity": 1100,
+        "minOrderQuantity": 12,
+        "price": 40,
+        "description" : " Floor lamps can provide overall lighting for watching TV or sitting comfortably with family and friends. You can set them up around the room to provide lighting based on the actions that you do in the room. ",
+        "img":"https://i.ibb.co/3MsRSjX/pr4-min.jpg"
+    },
+    {
+        "id":6,
+        "name":"Living room lamp",
+        "quantity": 900,
+        "minOrderQuantity": 12,
+        "price": 30,
+        "description" : "Such a minimalistic but stylish chandelier lighting fixture is an ideal lighting choice for your space while a great decoration element to your house, adding more elegance and charm to your home.It fits for your kitchen, entryway, and bedroom. ",
+        "img":"https://i.ibb.co/dG7vgm3/pr5-min.jpg"
+    },
+    {
+        "id":6,
+        "name":"Table reading lamp",
+        "quantity": 900,
+        "minOrderQuantity": 12,
+        "price": 30,
+        "img":"https://i.ibb.co/ypHjVgH/pr6-min.jpg"
+    },
+    {
+        "id":6,
+        "name":"Elegant Liviging room lamp",
+        "quantity": 900,
+        "minOrderQuantity": 12,
+        "price": 30,
+        "description" : "Fashion Style Modern sputnik chandelier, surrounded by eight golden iron rods and bulbs, looks up like a star explosion. It combining contemporary and elegant style, suitable for living room lighting decoration.",
+        "img":"https://i.ibb.co/BZ0Lq49/pr8-min.jpg"
+    }
+]

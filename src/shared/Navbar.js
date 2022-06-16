@@ -48,7 +48,6 @@ const Navbar = () => {
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal p-0 ml-50 font-bold uppercase text-primary">
                     <li><NavLink to=''>Home</NavLink></li>
-                    <li><NavLink to='/portfolio'>Portfolio</NavLink></li>
                     <li><NavLink to='/blogs'>Blogs</NavLink></li>
                     {user?.uid ?
                         <>

@@ -17,7 +17,7 @@ const Tools = () => {
                 <h1 className="text-3xl font-medium title-font text-gray-900 mb-12 text-center">  Our Best Selling Lamps</h1>
                 <div className="flex flex-wrap -m-4">
                     {
-                        lights?.slice(-8).map(light => <Light
+                        lights.map(light => <Light
                             key={light._id}
                             light={light}
                         ></Light>)

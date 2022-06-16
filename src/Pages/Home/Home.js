@@ -8,11 +8,13 @@ import DiscountBanner from './DiscountBanner';
 import OurGallery from './OurGallery';
 import WorkProcessing from './WorkProcessing';
 import NewArrivals from './NewArrivals';
+import About from './About';
 const Home = () => {
     return (
         <div>
             <Carousel></Carousel>
             <Info></Info>
+            <About></About>
             <WorkProcessing></WorkProcessing>
             <Lights></Lights>
             <DiscountBanner></DiscountBanner>

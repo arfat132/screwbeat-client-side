@@ -4,7 +4,7 @@ import { IoIosPeople } from 'react-icons/io';
 import { MdOutlineHighQuality } from 'react-icons/md';
 const Info = () => {
     return (
-        <div className="flex flex-wrap text-center w-[400px] md:w-[800px] lg:w-[900px] lg:mx-96 mx-4 bg-primary py-12 -mt-24 absolute">
+        <div className="flex flex-wrap text-center w-[400px] md:w-[800px] lg:w-[900px] lg:mx-80 mx-4 bg-primary py-12 -mt-24 absolute">
                     <div className="w-1/3 border-gray-200 border-opacity-60 text-center">
                     <IoIosPeople className='mx-auto text-5xl mb-4 text-white'/>
                 <h1 className='lg:text-xl text-sm font-medium text-white'>We are professional</h1>

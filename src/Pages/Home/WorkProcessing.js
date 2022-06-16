@@ -9,7 +9,7 @@ import { GiBedLamp } from 'react-icons/gi';
 const WorkProcessing = () => {
     return (
         <section className="text-secondary body-font w-full mt-28">
-            <div className="container px-5 pt-20 pb-14 mx-auto">
+            <div className="container px-20 pt-20 pb-14 mx-auto">
                 <h2 className="text-md text-primary tracking-widest font-bold title-font mb-1 text-center uppercase">What we do</h2>
                 <h1 className="text-4xl font-bold title-font text-secondary mb-24 text-center capitalize">Check out Our Work process</h1>
                 <div className="flex flex-wrap -m-4">

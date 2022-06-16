@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import Navbar from './shared/Navbar';
 import Footer from './shared/Footer';
-import Portfolio from './Pages/Portfolio/Portfolio';
 import NotFound from './Pages/NotFound/NotFound';
 import SignIn from './Pages/Auth/SignIn';
 import SignUp from './Pages/Auth/SignUp';
@@ -26,7 +25,6 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/portfolio" element={<Portfolio />}></Route>
         <Route path="/blogs" element={<Blogs />}></Route>
         <Route path="/dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} >
           <Route index element={<MyProfile></MyProfile>}></Route>
