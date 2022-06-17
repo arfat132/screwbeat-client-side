@@ -6,7 +6,7 @@ const Blog = ({blog}) => {
 
     return (
         <div className="p-4 md:w-1/2">
-            <div className="h-full border-2 border-gray-200 border-opacity-60 overflow-hidden flex">
+            <div className="h-full border-2 border-gray-200 border-opacity-60 overflow-hidden lg:flex">
                 <div>
                 <img className="h-56 w-[700px] object-cover object-center" src={img} alt="blog" />
                 </div>
