@@ -10,7 +10,7 @@ const Light = ({ light }) => {
     }
     return (
         <div className="p-4 md:w-1/4">
-            <div className="h-[670px] border border-gray-200 relative">
+            <div className="lg:h-[670px] h-[650px] border border-gray-200 relative">
                 <img className="mb-5" src={img} alt="" />
                 <div className="px-5">
                     <h5 className="text-xl font-semibold tracking-tight text-gray-900 mb-4 capitalize">{name}</h5>
@@ -21,7 +21,7 @@ const Light = ({ light }) => {
                     <p>{description}</p>
                     <div className="flex justify-between items-center absolute bottom-4">
                         <span className="text-3xl font-bold text-gray-900 dark:text-white">${price}</span>
-                        <button onClick={() => navigateToDetails(_id)} className='bg-primary text-white px-6 py-2 uppercase font-bold ml-28'>Buy Now</button>
+                        <button onClick={() => navigateToDetails(_id)} className='bg-primary text-white px-6 py-2 uppercase font-bold ml-16 lg:ml-28'>Buy Now</button>
                     </div>
                 </div>
             </div>

@@ -15,23 +15,23 @@ const BusinessSummary = () => {
                     <h1 className="sm:text-3xl text-2xl font-medium title-font">Trusted By Worldwide</h1>
                 </div>
                 <div className="flex flex-wrap">
-                    <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 text-center">
-                        <AiOutlineUsergroupAdd className='text-8xl text-primary p-3 text-center sm:10 lg:ml-24  mb-2' />
+                    <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 text-center mt-5 lg:mt-0">
+                        <AiOutlineUsergroupAdd className='text-8xl text-primary p-3 text-center  lg:ml-24 mb-2' />
                         <h2 className="title-font font-medium sm:text-4xl text-3xl"><CountUp end={234} />k+</h2>
                         <p>Customers</p>
                     </div>
-                    <div className="xl:w-1/4 lg:w-1/1 md:w-full px-8 py-6">
-                        <MdOutlineRateReview className='text-8xl text-primary p-3 text-center sm:10 lg:ml-24 mb-2' />
+                    <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6">
+                        <MdOutlineRateReview className='text-8xl text-primary p-3 text-center lg:ml-24 mb-2' />
                         <h2 className="title-font font-medium sm:text-4xl text-3xl"><CountUp end={334} />k+</h2>
                         <p>Reviews</p>
                     </div>
                     <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6">
-                        <BiDollarCircle className='text-8xl text-primary p-3 text-center sm:10 lg:ml-24  mb-2' />
+                        <BiDollarCircle className='text-8xl text-primary p-3 text-center lg:ml-24  mb-2' />
                         <h2 className="title-font font-medium sm:text-4xl text-3xl"><CountUp end={104} />k+</h2>
                         <p>Revenues</p>
                     </div>
                     <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6">
-                        <BsTools className='text-8xl text-primary p-3 text-center sm:10 lg:ml-24 mb-2' />
+                        <BsTools className='text-8xl text-primary p-3 text-center lg:ml-24 mb-2' />
                         <h2 className="title-font font-medium sm:text-4xl text-3xl"><CountUp end={100} />k+</h2>
                         <p>Tools</p>
                     </div>

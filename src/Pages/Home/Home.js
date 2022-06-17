@@ -19,7 +19,6 @@ const Home = () => {
             <WorkProcessing></WorkProcessing>
             <Lights></Lights>
             <DiscountBanner></DiscountBanner>
-            <NewArrivals></NewArrivals>
             <BusinessSummary></BusinessSummary>
             <OurGallery></OurGallery>
             <Reviews></Reviews>
