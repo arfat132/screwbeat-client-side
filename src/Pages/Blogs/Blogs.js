@@ -1,10 +1,8 @@
 import React from 'react';
-import Navbar from '../../shared/Navbar';
 
 const Blogs = () => {
     return (
         <div>
-            <Navbar></Navbar>
               <section className="text-gray-600 body-font">
             <div className="container px-5 py-12 mx-auto">
                 <h1 className='text-center text-primary uppercase text-3xl font-bold mb-6'>My Blogs</h1>

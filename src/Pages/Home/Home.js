@@ -10,11 +10,9 @@ import WorkProcessing from './WorkProcessing';
 import NewArrivals from './NewArrivals';
 import About from './About';
 import Footer from '../../shared/Footer';
-import Navbar from '../../shared/Navbar';
 const Home = () => {
     return (
         <div>
-            <Navbar></Navbar>
             <Carousel></Carousel>
             <Info></Info>
             <About></About>

@@ -3,7 +3,7 @@ import auth from '../../Firebase/firebase.init';
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-
+import { BiEdit } from 'react-icons/bi';
 const MyProfile = () => {
     const [user] = useAuthState(auth);
 
@@ -117,7 +117,7 @@ const MyProfile = () => {
                         </div>
                         <div className='w-1/2 pl-6'>
                             <div className='flex justify-between items-center '> <h1 className='mb-5 font-bold text-2xl'>Educational Information</h1>
-                                <label for="my-modal" class="btn modal-button text-white mb-2 bg-primary font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Update</label>
+                                <label for="my-modal" class="flex items-center -mt-14 text-primary modal-button mb-2 font-medium text-lg w-full sm:w-auto text-center">Edit<BiEdit className='ml-1'/></label>
                             </div>
                             <hr className='py-5' />
                             <div className="relative z-0 w-full mb-6 group">
