@@ -13,7 +13,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className="navbar bg-tranparent pt-6 sm:px-0 lg:px-12 z-40 bg-opacity-60 absolute text-white">
+        <div className="shadow-lg navbar bg-primary py-4 sm:px-0 lg:px-12 z-40 absolute text-white mb-24">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -27,7 +27,7 @@ const Navbar = () => {
                         {user?.uid ?
                             <>
                                 <NavLink to="/dashboard" className="mr-5 items-center">Dashboard</NavLink>
-                                <NavLink to="/signIn" onClick={logout} className="md:border-l md:border-gray-400 font-bold uppercase inline-flex items-center bg-none border-0 py-1 px-3 focus:outline-none rounded text-primary mt-4 md:mt-0">Sign Out
+                                <NavLink to="/signIn" onClick={logout} className="md:border-l md:border-gray-400 font-bold uppercase inline-flex items-center bg-none border-0 py-1 px-3 focus:outline-none rounded text-white mt-4 md:mt-0">Sign Out
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
                                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                                     </svg>
@@ -35,7 +35,7 @@ const Navbar = () => {
 
                             </>
                             :
-                            <NavLink to="/signIn" className="md:border-l md:border-gray-400 font-bold uppercase inline-flex items-center bg-none border-0 py-1 px-3 focus:outline-none rounded text-primary mt-4 md:mt-0">Sign In
+                            <NavLink to="/signIn" className="md:border-l md:border-gray-400 font-bold uppercase inline-flex items-center bg-none border-0 py-1 px-3 focus:outline-none rounded text-white mt-4 md:mt-0">Sign In
                                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
@@ -43,16 +43,16 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <NavLink to='/' className="normal-case w-52 text-primary font-bold text-3xl"><img src="" alt="" srcSet="" />Outlight</NavLink>
+                <NavLink to='/' className="normal-case w-44 text-white font-bold text-3xl"><img src={logo} alt="" srcSet="" /></NavLink>
             </div>
             <div className="navbar-end hidden lg:flex">
-                <ul className="menu menu-horizontal p-0 ml-50 font-bold uppercase text-primary">
+                <ul className="menu menu-horizontal p-0 ml-50 font-bold uppercase text-white">
                     <li><NavLink to=''>Home</NavLink></li>
                     <li><NavLink to='/blogs'>Blogs</NavLink></li>
                     {user?.uid ?
                         <>
-                            <NavLink to="/dashboard" className="mr-5 font-bold uppercase text-primary items-center mt-3 ml-2">Dashboard</NavLink>
-                            <NavLink to="/signIn" onClick={logout} className="md:border-l md:border-gray-400 font-bold uppercase inline-flex items-center bg-none border-0 py-1 px-3 focus:outline-none rounded text-primary mt-4 md:mt-0">Sign Out
+                            <NavLink to="/dashboard" className="mr-5 font-bold uppercase text-white items-center mt-3 ml-2">Dashboard</NavLink>
+                            <NavLink to="/signIn" onClick={logout} className="md:border-l md:border-gray-400 font-bold uppercase inline-flex items-center bg-none border-0 py-1 px-3 focus:outline-none rounded text-white mt-4 md:mt-0">Sign Out
                                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
@@ -60,7 +60,7 @@ const Navbar = () => {
 
                         </>
                         :
-                        <NavLink to="/signIn" className="md:border-l md:border-gray-400 font-bold uppercase inline-flex items-center bg-none border-0 py-1 px-3 focus:outline-none rounded text-primary mt-4 md:mt-0">Sign In
+                        <NavLink to="/signIn" className="md:border-l md:border-gray-400 font-bold uppercase inline-flex items-center bg-none border-0 py-1 px-3 focus:outline-none rounded text-white mt-4 md:mt-0">Sign In
                             <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
                                 <path d="M5 12h14M12 5l7 7-7 7"></path>
                             </svg>

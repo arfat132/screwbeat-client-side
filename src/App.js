@@ -22,7 +22,6 @@ import Blogs from './Pages/Blogs/Blogs';
 function App() {
   return (
     <div>
-      <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/blogs" element={<Blogs />}></Route>
@@ -45,7 +44,6 @@ function App() {
         <Route path="/signUp" element={<SignUp />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
-      <Footer></Footer>
     </div>
   );
 }

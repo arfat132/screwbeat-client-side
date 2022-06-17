@@ -57,33 +57,37 @@ const AddProduct = () => {
     }
 
     return (
-        <div className='px-12 py-12 mx-12 mt-12 shadow-md border border-gray-100'>
+        <div className='px-8 py-6 mx-12 mt-6 shadow-md border border-gray-100 w-[650px] mb-10'>
             <h1 className='mb-5 font-bold text-2xl'>Add a Product</h1>
-            <hr className='py-5' />
+            <hr className='py-2' />
             <form onSubmit={handleSubmit(onSubmit)}>
-                <div className="mb-6">
-                    <label htmlFor="name" className="w-80 mb-2 text-sm font-medium text-gray-900 ">Product Name</label>
-                    <input {...register("name")} type="name" id="name" className="mr-72 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " />
+                <div className="mb-3">
+                    <label htmlFor="name" className="w-80 file:text-sm font-medium text-gray-900 ">Product Name</label>
+                    <input {...register("name")} type="name" id="name" className="mr-72 mt-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " />
                 </div>
-                <div className="mb-6">
-                    <label htmlFor="price" className="w-80 mb-2 text-sm font-medium text-gray-900 ">Price</label>
-                    <input {...register("price")} type="number" id="price" className="mr-72 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " />
+                <div className='flex flex-wrap items-center'>
+                <div className="mb-3 w-1/2 pr-2">
+                    <label htmlFor="price" className="w-80 text-sm font-medium text-gray-900 ">Price</label>
+                    <input {...register("price")} type="number" id="price" className="mr-72 mt-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " />
                 </div>
-                <div className="mb-6">
-                    <label htmlFor="quantity" className="block mb-2 text-sm font-medium text-gray-900 ">Stock</label>
-                    <input {...register("quantity")} type="number" id="quantity" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " />
+                <div className="mb-3 w-1/2 pl-2">
+                    <label htmlFor="quantity" className="block text-sm font-medium text-gray-900 ">Stock</label>
+                    <input {...register("quantity")} type="number" id="quantity" className="mt-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " />
                 </div>
-                <div className="mb-6">
-                    <label htmlFor="minOrderQuantity" className="block mb-2 text-sm font-medium text-gray-900 ">Minimum Order</label>
-                    <input {...register("minOrderQuantity")} type="number" id="minOrderQuantity" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " />
                 </div>
-                <div className="mb-6">
-                    <label htmlFor="imageFile" className="block mb-2 text-sm font-medium text-gray-900 ">Image</label>
-                    <input {...register("image")} type="file" id="imageFile" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " />
+                <div className='flex flex-wrap items-center'>
+                <div className="mb-3 w-1/2 pr-2">
+                    <label htmlFor="minOrderQuantity" className="block text-sm font-medium text-gray-900 ">Minimum Order</label>
+                    <input {...register("minOrderQuantity")} type="number" id="minOrderQuantity" className="mt-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " />
                 </div>
-                <div className="mb-6">
-                    <label htmlFor="description" className="block mb-2 text-sm font-medium text-gray-900 ">Description</label>
-                    <textarea {...register("description")} name="description" id="" cols="30" rows="10" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full"></textarea>
+                <div className="mb-3 w-1/2 pl-2">
+                    <label htmlFor="imageFile" className="block text-sm font-medium text-gray-900 ">Image</label>
+                    <input {...register("image")} type="file" id="imageFile" className="mt-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " />
+                </div>
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="description" className="block text-sm font-medium text-gray-900 ">Description</label>
+                    <textarea {...register("description")} name="description" id="" cols="10" rows="5" className="mt-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full"></textarea>
                 </div>
                 <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add Product</button>
             </form>

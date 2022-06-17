@@ -1,8 +1,11 @@
 import React from 'react';
+import Navbar from '../../shared/Navbar';
 
 const Blogs = () => {
     return (
-        <section className="text-gray-600 body-font">
+        <div>
+            <Navbar></Navbar>
+              <section className="text-gray-600 body-font">
             <div className="container px-5 py-12 mx-auto">
                 <h1 className='text-center text-primary uppercase text-3xl font-bold mb-6'>My Blogs</h1>
                 <div className="flex flex-wrap -m-4">
@@ -58,6 +61,7 @@ const Blogs = () => {
                 </div>
             </div>
         </section>
+      </div>
     );
 };
 

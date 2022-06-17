@@ -52,7 +52,9 @@ const SignIn = () => {
         signInError = <p className='text-red-500 mb-2'><small>{error?.message || googleError?.message}</small></p>
     }
     return (
-        < div className="w-[450px] p-8 mx-auto border-2 border-orange-400 bg-gray-50 items-center text-center shadow-xl rounded-xl my-24">
+        <div className='h-min-screen hero bg-[url(https://lumizo.lk/frontend/img/slider/s1.jpg)]'>
+            <div className='w-full pl-24'>
+            < div className="w-[450px] my-[79.5px] p-8 border-2 border-primary bg-gray-50 shadow-xl rounded-xl">
             <h1 className='w-56 text-center rounded p-2 mx-auto mb-8 mt-[-50px] bg-primary text-white font-medium text-xl'>Sign In</h1>
             <div className="avatar mb-8">
                 <div className="w-28 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -117,6 +119,8 @@ const SignIn = () => {
             <button onClick={() => signInWithGoogle()} className="flex items-center justify-center bg-gray-50 border font-bold border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-900 focus:border-blue-900 w-full p-2.5"> <img className='w-6 pr-2' src={GoogleLogo} alt='' /> Continue with Google</button>
             <ToastContainer></ToastContainer>
         </div>
+          </div>
+       </div>
     );
 };
 
