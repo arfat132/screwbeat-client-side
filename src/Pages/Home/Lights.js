@@ -5,7 +5,7 @@ const Tools = () => {
     const [lights, setLights] = useState([]);
 
     useEffect(() => {
-        fetch("tools.json")
+        fetch("http://localhost:5000/lights")
             .then(response => response.json())
             .then(data => setLights(data))
     }, [])

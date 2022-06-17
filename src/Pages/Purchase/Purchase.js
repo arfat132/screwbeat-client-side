@@ -12,7 +12,7 @@ const Purchase = () => {
     const [user] = useAuthState(auth);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/tools/${id}`)
+        fetch(`http://localhost:5000/lights/${id}`)
             .then(res => res.json())
             .then(data => setToolsDetails(data))
     }, [id, toolsDetails])
@@ -57,7 +57,7 @@ const Purchase = () => {
 
     return (
         <section className="text-gray-600 body-font">
-            <div className="container px-12 pb-24 pt-12 mx-auto">
+            <div className="container px-12 pb-24 pt-36 mx-auto">
                 <div className="flex flex-wrap -mx-4 -mb-10">
                     <div className="p-4 md:w-1/2">
                         <div className="lg:h-[400px] sm:h-[700px] shadow-md rounded-md border border-gray-200">
