@@ -3,7 +3,8 @@ import Footer from '../../shared/Footer';
 
 const Contact = () => {
     return (
-        <div className='mx-4'>
+        <>
+          <div className='mx-4 pt-24'>
             <div className='w-full bg-primary mt-4 lg:py-36 py-12 px-8'>
                 <h2 className='font-bold text-xl text-white first-letter:uppercase'>Contact us</h2>
                 <h1 className='font-bold text-4xl text-white capitalize'>Let's talk about your problem</h1>
@@ -135,8 +136,9 @@ const Contact = () => {
                 <button className="text-white bg-primary border-0 py-2 px-6 focus:outline-none text-lg">Button</button>
 
             </div>
+            </div>
             <Footer></Footer>
-        </div>
+        </>
     );
 };
 

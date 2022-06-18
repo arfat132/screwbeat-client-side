@@ -5,7 +5,7 @@ const Shop = () => {
     return (
         <div>
             <div>
-                <div className="drawer drawer-mobile ">
+                <div className="drawer drawer-mobile pt-24">
                     <input id="dashboard-sidebar" type="checkbox" className="drawer-toggle" />
                     <div className="drawer-content">
                         <div className="content">
