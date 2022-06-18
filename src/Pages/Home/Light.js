@@ -21,7 +21,7 @@ const Light = ({ light }) => {
                     <p>{description}</p>
                     <div className="flex justify-between items-center absolute bottom-4">
                         <span className="text-3xl font-bold text-gray-900 dark:text-white">${price}</span>
-                        <button onClick={() => navigateToDetails(_id)} className='bg-primary text-white px-6 py-2 uppercase font-bold ml-16 lg:ml-28'>Buy Now</button>
+                        <button onClick={() => navigateToDetails(_id)} className='bg-primary text-white px-6 py-2 uppercase font-bold'>Buy Now</button>
                     </div>
                 </div>
             </div>

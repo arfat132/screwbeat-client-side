@@ -25,7 +25,7 @@ const MyProfile = () => {
             currentYear: event.target.currentYear.value,
         }
         console.log(myProfile)
-        axios.post('http://localhost:5000/myProfile', myProfile)
+        axios.post('https://stormy-dusk-98977.herokuapp.com/myProfile', myProfile)
             .then(response => {
                 console.log(response)
                 const { data } = response;
@@ -56,7 +56,7 @@ const MyProfile = () => {
         }
         console.log(updateProfile)
         const email = user.email
-        const url = `http://localhost:5000/myProfile/${email}`;
+        const url = `https://stormy-dusk-98977.herokuapp.com/myProfile/${email}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -117,7 +117,7 @@ const MyProfile = () => {
                         </div>
                         <div className='w-1/2 pl-6'>
                             <div className='flex justify-between items-center '> <h1 className='mb-5 font-bold text-2xl'>Educational Information</h1>
-                                <label for="my-modal" class="flex items-center -mt-14 text-primary modal-button mb-2 font-medium text-lg w-full sm:w-auto text-center">Edit<BiEdit className='ml-1'/></label>
+                                <label for="my-modal" class="flex items-center -mt-14 text-primary modal-button mb-2 font-medium text-lg w-full sm:w-auto text-center">Edit<BiEdit className='ml-1' /></label>
                             </div>
                             <hr className='py-5' />
                             <div className="relative z-0 w-full mb-6 group">

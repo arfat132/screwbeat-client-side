@@ -52,7 +52,7 @@ const SignIn = () => {
         signInError = <p className='text-red-500 mb-2'><small>{error?.message || googleError?.message}</small></p>
     }
     return (
-        <div className='h-min-screen hero bg-[url(https://www.wunschlicht.com/en-gb/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/v/i/vistosi-armonia-sp-05_2.jpg)] pt-48 pb-16'>
+        <div className='h-min-screen hero bg-[url(https://www.wunschlicht.com/en-gb/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/v/i/vistosi-armonia-sp-05_2.jpg)] pt-28 pb-16'>
             <div className='w-full lg:pl-24'>
                 < div className="lg:w-[450px] mx-4 lg:mx-0 items-center text-center p-8 border-2 border-primary bg-gray-50 shadow-xl rounded-xl">
                     <div className="avatar mb-8 -mt-24">

@@ -33,7 +33,7 @@ const AddProduct = () => {
                     }
                     console.log(tools)
                     // send to database 
-                    fetch('http://localhost:5000/tools', {
+                    fetch('https://stormy-dusk-98977.herokuapp.com/tools', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',
@@ -66,24 +66,24 @@ const AddProduct = () => {
                     <input {...register("name")} type="name" id="name" className="mr-72 mt-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " />
                 </div>
                 <div className='flex flex-wrap items-center'>
-                <div className="mb-3 w-1/2 pr-2">
-                    <label htmlFor="price" className="w-80 text-sm font-medium text-gray-900 ">Price</label>
-                    <input {...register("price")} type="number" id="price" className="mr-72 mt-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " />
-                </div>
-                <div className="mb-3 w-1/2 pl-2">
-                    <label htmlFor="quantity" className="block text-sm font-medium text-gray-900 ">Stock</label>
-                    <input {...register("quantity")} type="number" id="quantity" className="mt-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " />
-                </div>
+                    <div className="mb-3 w-1/2 pr-2">
+                        <label htmlFor="price" className="w-80 text-sm font-medium text-gray-900 ">Price</label>
+                        <input {...register("price")} type="number" id="price" className="mr-72 mt-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " />
+                    </div>
+                    <div className="mb-3 w-1/2 pl-2">
+                        <label htmlFor="quantity" className="block text-sm font-medium text-gray-900 ">Stock</label>
+                        <input {...register("quantity")} type="number" id="quantity" className="mt-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " />
+                    </div>
                 </div>
                 <div className='flex flex-wrap items-center'>
-                <div className="mb-3 w-1/2 pr-2">
-                    <label htmlFor="minOrderQuantity" className="block text-sm font-medium text-gray-900 ">Minimum Order</label>
-                    <input {...register("minOrderQuantity")} type="number" id="minOrderQuantity" className="mt-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " />
-                </div>
-                <div className="mb-3 w-1/2 pl-2">
-                    <label htmlFor="imageFile" className="block text-sm font-medium text-gray-900 ">Image</label>
-                    <input {...register("image")} type="file" id="imageFile" className="mt-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " />
-                </div>
+                    <div className="mb-3 w-1/2 pr-2">
+                        <label htmlFor="minOrderQuantity" className="block text-sm font-medium text-gray-900 ">Minimum Order</label>
+                        <input {...register("minOrderQuantity")} type="number" id="minOrderQuantity" className="mt-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " />
+                    </div>
+                    <div className="mb-3 w-1/2 pl-2">
+                        <label htmlFor="imageFile" className="block text-sm font-medium text-gray-900 ">Image</label>
+                        <input {...register("image")} type="file" id="imageFile" className="mt-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " />
+                    </div>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="description" className="block text-sm font-medium text-gray-900 ">Description</label>

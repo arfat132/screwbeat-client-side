@@ -23,7 +23,7 @@ const AddReviews = () => {
 
         console.log(reviews)
         // send to database 
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://stormy-dusk-98977.herokuapp.com/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -77,9 +77,9 @@ const AddReviews = () => {
                                     size={24}
                                     style={{
                                         marginRight: 10,
-                                        cursor:"pointer"
+                                        cursor: "pointer"
                                     }}
-                                    color={(hoverValue || currentValue) > index? colors.orange : colors.gray}
+                                    color={(hoverValue || currentValue) > index ? colors.orange : colors.gray}
                                     onClick={() => handleClickValue(index + 1)}
                                     onMouseOver={() => handleMouseOver(index + 1)}
                                     onMouseLeave={handleMouseLeave}

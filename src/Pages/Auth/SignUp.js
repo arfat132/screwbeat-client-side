@@ -46,7 +46,7 @@ const SignUp = () => {
     }
 
     return (
-        <div className='h-min-screen hero bg-[url(https://lumizo.lk/frontend/img/slider/s1.jpg)] pt-[125px]'>
+        <div className='h-min-screen hero bg-[url(https://lumizo.lk/frontend/img/slider/s1.jpg)] pt-[60px]'>
             <div className='w-full lg:pl-24'>
                 < div className="lg:w-[450px] mx-4 lg:mx-0 p-8 border-2 border-primary bg-gray-50 items-center text-center shadow-xl rounded-xl my-[48.5px]">
                     <div className="avatar mb-8 -mt-24">
