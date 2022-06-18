@@ -19,7 +19,10 @@ const Shop = () => {
                             <li className='text-md -mb-3'><Link to="/shop"><IoIosArrowForward/>All Lamp</Link></li>
                             <li className='text-md -mb-3'><Link to="/shop/floor"><IoIosArrowForward/>Floor Lamp</Link></li>
                             <li className='text-md -mb-3'><Link to="/shop/lampset"><IoIosArrowForward/>Lamp set</Link></li>
-                            <li className='text-md -mb-3'><Link to="/shop/ceiling"><IoIosArrowForward/>Ceiling Lamp</Link></li>
+                            <li className='text-md -mb-3'><Link to="/shop/ceiling"><IoIosArrowForward />Ceiling Lamp</Link></li>
+                            <li className='text-md -mb-3'><Link to="/shop/ceiling"><IoIosArrowForward/>Table Lamp</Link></li>
+                            <li className='text-md -mb-3'><Link to="/shop/ceiling"><IoIosArrowForward />Bedroom Lamp</Link></li>
+                            <li className='text-md -mb-3'><Link to="/shop/ceiling"><IoIosArrowForward/>Restaurant Lamp</Link></li>
                         </ul>
                     </div>
                 </div>

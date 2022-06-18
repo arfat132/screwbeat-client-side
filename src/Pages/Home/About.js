@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section class="lg:mt-24 mt-12 lg:pt-[120px] overflow-hidden px-8 lg:px-20 mx-auto">
+        <section class="lg:pt-[170px] overflow-hidden px-8 lg:px-20 mx-auto">
             <div class="container">
                 <div class="flex flex-wrap justify-between  items-center">
                     <div class="w-full lg:w-6/12 mx-auto">

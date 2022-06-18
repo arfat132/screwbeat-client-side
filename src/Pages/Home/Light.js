@@ -19,9 +19,13 @@ const Light = ({ light }) => {
                         <span className="bg-primary bg-opacity-20 text-primary text-xs font-semibold mr-2 px-2.5 py-0.5 rounded ml-3">Min Order {minOrderQuantity}</span>
                     </div>
                     <p>{description}</p>
-                    <div className="flex justify-between items-center absolute bottom-4">
-                        <span className="text-3xl font-bold text-gray-900 dark:text-white">${price}</span>
+                    <div className="flex justify-between mt-5">
+                        <div>
+                        <span className="text-3xl font-bold text-gray-900">${price}</span>
+                      </div>
+                        <div>
                         <button onClick={() => navigateToDetails(_id)} className='bg-primary text-white px-6 py-2 uppercase font-bold'>Buy Now</button>
+                       </div>
                     </div>
                 </div>
             </div>
