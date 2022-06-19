@@ -12,12 +12,30 @@ const AllProduct = () => {
     useEffect(() => {
         fetch("http://localhost:5000/lights")
             .then(res => res.json())
-            .then(data =>  setProduct(data))
+            .then(data => setProduct(data))
     }, [sort, limit, pageNumber])
     return (
         <div>
             <div className='w-full mt-4 mb-4'>
-            <img className='lg:mx-6' src="https://i.ibb.co/hmKjLbq/sb.png" alt="" />
+                <div className="">
+                    <div className="">
+                        <div className="lg:max-w-[1440px] relative inset-0 md:max-w-[744px] max-w-[375px] mx-auto">
+                            <div className="relative">
+                                <img src="https://i.ibb.co/Ld03g0s/sss.png" alt='' className="w-full object-cover lg:h-[330px] lg:block md:hidden hidden" />
+                                <div className="w-full h-full absolute top-0 left-0" />
+                                <img src="https://i.ibb.co/Ld03g0s/sss.png" alt='' className="lg:hidden md:block hidden" />
+                                <img src="https://i.ibb.co/Ld03g0s/sss.png" alt='' className="lg:hidden md:hidden block" />
+                                <div className="absolute lg:bottom-8 md:bottom-3 bottom-0 lg:px-7 md:px-10 px-4 py-4">
+                                    <p className="lg:text-4xl md:text-2xl text-lgp font-bold leading-9 text-white">We are the Different Types of</p>
+                                    <h1 className="mb-5 lg:text-4xl text-lg font-bold text-white">Lamps Menufacturer
+                                    </h1>
+                                    <p className="mb-5 text-white lg:w-[600px] hidden lg:block">A tool can be any item that is used to achieve a goal. Equipment usually denotes a set of tools that are used to achieve a specific objective. A tool can be non-mechanical as well. However, when one says equipment.</p>
+                                    <p className="lg:block hidden md:block text-base font-medium leading-none text-gray-800 bg-white px-2 py-2 max-w-[142px] mt-3 text-center">50% discount !!!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className='flex justify-between bg-gray-200 bg-opacity-60 mt-4 sm:mx-6 md:mx-6 px-4 py-3'>
                 <p className='flex items-center ml-4  text-gray-500'>Paginate by
@@ -35,7 +53,7 @@ const AllProduct = () => {
                         <option value="high">High to Low</option>
                     </select></p>
             </div>
-            
+
             <div className="text-gray-600 body-font pt-8 auto">
                 <div className="container px-12 pb-16 mx-auto">
                     {allProducts?.length ?

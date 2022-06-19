@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from '../../shared/Footer';
 import Faq from './Faq';
 import Hero from './Hero';
+import Team from './Team';
 
 const About = () => {
     return (
@@ -10,6 +11,7 @@ const About = () => {
                 <img className='lg:mx-6 lg:w-[1475px]' src="https://i.ibb.co/hmKjLbq/sb.png" alt="" />
             </div>
             <Hero></Hero>
+            <Team></Team>
             <Faq></Faq>
             <Footer></Footer>
         </div>
