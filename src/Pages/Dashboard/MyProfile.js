@@ -75,7 +75,7 @@ const MyProfile = () => {
 
     return (
         <>
-            <div className='px-8 py-8 mx-12 mt-8 shadow-md border border-gray-100 w-[900px]'>
+            <div className='px-8 py-8 mx-12 mt-36 shadow-md border border-gray-100 w-[900px]'>
                 <form onSubmit={handleMyProfile}>
                     <div className='flex flex-wrap justify-between'>
                         <div className='w-1/2 pr-6'>

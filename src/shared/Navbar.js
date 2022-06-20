@@ -13,7 +13,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className="shadow-lg navbar bg-primary py-4 sm:px-0 lg:px-12 z-40 fixed">
+        <div className="shadow-lg navbar bg-primary py-4 mb-24 sm:px-0 lg:px-12 z-40 fixed">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -49,8 +49,8 @@ const Navbar = () => {
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal p-0 ml-50 font-bold uppercase text-white">
                     <li><NavLink to=''>Home</NavLink></li>
-                    <li><NavLink to='/about'>About</NavLink></li>
                     <li ><NavLink to='/Shop'>Shop</NavLink></li>
+                    <li><NavLink to='/about'>About</NavLink></li>
                     <li><NavLink to='/blogs'>Blogs</NavLink></li>
                     <li><NavLink to='/contact'>Contact</NavLink></li>
                     {user?.uid ?

@@ -12,12 +12,11 @@ const Purchase = () => {
     const [user] = useAuthState(auth);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/lights/${id}`)
+        fetch(`http://localhost:5000/shop/${id}`)
             .then(res => res.json())
             .then(data => setToolsDetails(data))
     }, [id, toolsDetails])
 
-  
     const onSubmit = async data => {
 
         const orderDetails = {

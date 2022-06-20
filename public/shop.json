@@ -1,0 +1,191 @@
+[
+    {
+        "id":1,
+        "name":"Table Lamp Set",
+        "quantity": 1500,
+        "minOrderQuantity": 12,
+        "price": 70,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/cKBNM8S/king.png"
+    },
+    {
+        "id":2,
+        "name":"Ganeed Ceiling Light",
+        "quantity": 1000,
+        "minOrderQuantity": 12,
+        "price": 80,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/v3WywM8/reading.png"
+    },
+    {
+        "id":3,
+        "name":"Pendant  Lights ",
+        "quantity": 1200,
+        "minOrderQuantity": 12,
+        "price": 55,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/Yd1TXyh/stylish.png"
+    },
+    {
+        "id":4,
+        "name":"Vintage Ceiling Light",
+        "quantity": 1600,
+        "minOrderQuantity": 12,
+        "price": 60,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/QHpw9Xz/cucckoo.png"
+    },
+    {
+        "id":5,
+        "name":"Reading chair floor lamp",
+        "quantity": 1100,
+        "minOrderQuantity": 12,
+        "price": 40,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/dKnXLZV/white-bed.png"
+    },
+    {
+        "id":6,
+        "name":"Living room lamp",
+        "quantity": 900,
+        "minOrderQuantity": 12,
+        "price": 30,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/18HxvZX/flower-pink.png"
+    },
+    {
+        "id":7,
+        "name":"Table reading lamp",
+        "quantity": 900,
+        "minOrderQuantity": 12,
+        "price": 30,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/bLSMCb4/bed-lamp.png"
+    },
+    {
+        "id":8,
+        "name":"Elegant Liviging room lamp",
+        "quantity": 900,
+        "minOrderQuantity": 12,
+        "price": 30,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/R3ZS1Pm/silver-tabl-e2.png"
+    },
+    {
+        "id":9,
+        "name":"Table Lamp Set",
+        "quantity": 1500,
+        "minOrderQuantity": 12,
+        "price": 70,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/TwcZBdN/yellow-table.png"
+    },
+    {
+        "id":10,
+        "name":"Ganeed Ceiling Light",
+        "quantity": 1000,
+        "minOrderQuantity": 12,
+        "price": 80,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/C1r8PDB/silver-table.png"
+    },
+    {
+        "id":11,
+        "name":"Pendant  Lights ",
+        "quantity": 1200,
+        "minOrderQuantity": 12,
+        "price": 55,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/DfcjGKQ/ceiling-multi.png"
+    },
+    {
+        "id":12,
+        "name":"Vintage Ceiling Light",
+        "quantity": 1600,
+        "minOrderQuantity": 12,
+        "price": 60,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/kQC4rtt/single-ceiling.png"
+    },
+    {
+        "id":13,
+        "name":"Reading chair floor lamp",
+        "quantity": 1100,
+        "minOrderQuantity": 12,
+        "price": 40,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/GFVqRdt/bed-yellow.png"
+    },
+    {
+        "id":14,
+        "name":"Living room lamp",
+        "quantity": 900,
+        "minOrderQuantity": 12,
+        "price": 30,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/PhYrHRK/white-decoration.png"
+    },
+    {
+        "id":15,
+        "name":"Table reading lamp",
+        "quantity": 900,
+        "minOrderQuantity": 12,
+        "price": 30,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/mCbNbHN/golden-bed.png"
+    },
+    {
+        "id":16,
+        "name":"Elegant Liviging room lamp",
+        "quantity": 900,
+        "minOrderQuantity": 12,
+        "price": 30,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/qYk1bKk/ceiling-drawing2.png"
+    },
+    {
+        "id":17,
+        "name":"Vintage Ceiling Light",
+        "quantity": 1600,
+        "minOrderQuantity": 12,
+        "price": 60,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/6XHKxD3/ceiling-drawing-room.png"
+    },
+    {
+        "id":18,
+        "name":"Reading chair floor lamp",
+        "quantity": 1100,
+        "minOrderQuantity": 12,
+        "price": 40,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/0c6wWxg/drawing-room1.png"
+    },
+    {
+        "id":19,
+        "name":"Living room lamp",
+        "quantity": 900,
+        "minOrderQuantity": 12,
+        "price": 30,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/mcY672P/drawing-room.png"
+    },
+    {
+        "id":20,
+        "name":"Table reading lamp",
+        "quantity": 900,
+        "minOrderQuantity": 12,
+        "price": 30,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/fkGXvhZ/ceiling-gold-red.png"
+    },
+    {
+        "id":21,
+        "name":"Elegant Liviging room lamp",
+        "quantity": 900,
+        "minOrderQuantity": 12,
+        "price": 30,
+        "description" : "Each bedside table lamp contains one 5V/2A USB port on the metal lamp base to support charging your mobile phone, tablet, kindle reader, and other electronic devices.",
+        "img":"https://i.ibb.co/nrb68cM/ceiling-golden.png"
+    }
+]

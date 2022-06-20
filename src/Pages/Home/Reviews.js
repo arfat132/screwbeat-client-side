@@ -11,7 +11,7 @@ const Reviews = () => {
     }, [])
 
     return (
-        <section className="text-white body-font w-full lg:my-24 my-0">
+        <section className="text-white body-font w-full">
             <div className="container px-5 py-0 lg:py-24 mx-auto">
                 <h2 className="text-md text-primary tracking-widest font-bold title-font mb-1 text-center uppercase">Testimonials</h2>
                 <h1 className="text-3xl font-medium title-font text-gray-800 mb-24 text-center">  Customers Reviews</h1>

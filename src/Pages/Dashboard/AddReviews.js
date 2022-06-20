@@ -57,7 +57,7 @@ const AddReviews = () => {
         setHoverValue(undefined)
     }
     return (
-        <div className='px-12 py-12 mx-12 mt-12 shadow-md border border-gray-100 w-[600px]'>
+        <div className='px-12 py-12 mx-12 mt-36 shadow-md border border-gray-100 w-[600px]'>
             <h1 className='mb-5 font-bold text-2xl'>Give Review</h1>
             <hr className='py-5' />
             <form onSubmit={handleSubmit(onSubmit)}>

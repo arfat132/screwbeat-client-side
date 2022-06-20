@@ -12,6 +12,7 @@ import MyProfile from './Pages/Dashboard/MyProfile';
 import AddReviews from './Pages/Dashboard/AddReviews';
 import RequireAuth from './Pages/Auth/RequireAuth'
 import Purchase from './Pages/Purchase/Purchase';
+import ShopPurchase from './Pages/Purchase/ShopPurchase';
 import AddProduct from './Pages/Dashboard/AddProduct';
 import ManageOrders from './Pages/Dashboard/ManageOrders';
 import ManageProducts from './Pages/Dashboard/ManageProducts';
@@ -48,6 +49,11 @@ function App() {
         <Route path="/purchase/:id" element={
           <RequireAuth>
             <Purchase />
+          </RequireAuth>
+        } />
+        <Route path="/shopPurchase/:id" element={
+          <RequireAuth>
+            <ShopPurchase />
           </RequireAuth>
         } />
         <Route path="/signIn" element={<SignIn />}></Route>

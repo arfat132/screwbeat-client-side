@@ -1,12 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
-const Light = ({ light }) => {
-    const { _id, img, price, name, description, minOrderQuantity, quantity } = light;
+const Product = ({ allProduct }) => {
+    const { _id, img, price, name, minOrderQuantity, quantity } = allProduct;
     const navigate = useNavigate();
 
     const navigateToDetails = id => {
-        navigate(`/purchase/${id}`);
+        navigate(`/shopPurchase/${id}`);
     }
     return (
         <div className="p-4 md:w-1/4">
@@ -18,14 +18,13 @@ const Light = ({ light }) => {
                         <span className="bg-primary bg-opacity-20 text-primary text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Stock {quantity}</span>
                         <span className="bg-primary bg-opacity-20 text-primary text-xs font-semibold mr-2 px-2.5 py-0.5 rounded ml-3">Min Order {minOrderQuantity}</span>
                     </div>
-                    <p>{description}</p>
-                    <div className="flex justify-between items-center mb-3 mt-5">
+                    <div className="flex justify-between items-center mt-5 mb-2">
                         <div>
-                        <span className="text-3xl font-bold text-gray-900">${price}</span>
-                      </div>
+                            <span className="text-3xl font-bold text-gray-900">${price}</span>
+                        </div>
                         <div>
-                        <button onClick={() => navigateToDetails(_id)} className='text-gray-900 py-2 text-4xl font-bold'><AiOutlineShoppingCart /></button>
-                       </div>
+                            <button onClick={() => navigateToDetails(_id)} className='text-gray-900 py-2 text-4xl font-bold'><AiOutlineShoppingCart /></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -33,4 +32,4 @@ const Light = ({ light }) => {
     );
 };
 
-export default Light;
+export default Product;

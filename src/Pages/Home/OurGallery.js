@@ -4,10 +4,10 @@ const OurGallery = () => {
     return (
         <section class="text-gray-600 body-font pt-24">
         <div class="text-center">
-        <h1 className='text-center font-bold text-2xl'>Our Gallery</h1>
-     <p className='text-center text-gray-600 mt-2 mx-auto px-0 lg:px-80'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sint officiis animi, temporibus itaque molestias commodi ex quis harum voluptatum.</p>
+        <h2 className="text-md text-primary tracking-widest font-bold title-font mb-1 text-center uppercase">Gallery</h2>
+                <h1 className="lg:text-3xl text-xl font-medium title-font text-gray-900 mb-12 text-center">Explore Our Gallery</h1>
    </div>
-     <div class="container px-5 py-12 mx-auto flex flex-wrap">
+     <div class="container px-5 mx-auto flex flex-wrap">
          <div class="flex flex-wrap md:-m-2 -m-1">
              <div class="flex flex-wrap w-1/2">
                  <div class="md:p-2 p-1 w-1/2">

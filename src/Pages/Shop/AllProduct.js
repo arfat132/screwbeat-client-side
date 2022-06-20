@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import Light from '../Home/Light';
+import Product from './Product';
 
 const AllProduct = () => {
     const [allProducts, setProduct] = useState([]);
@@ -10,7 +10,7 @@ const AllProduct = () => {
     const [sort, setSort] = useState("Featured");
 
     useEffect(() => {
-        fetch("http://localhost:5000/lights")
+        fetch("http://localhost:5000/shop")
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [sort, limit, pageNumber])
@@ -59,10 +59,10 @@ const AllProduct = () => {
                     {allProducts?.length ?
                         <div className="flex flex-wrap -m-4 mb-6">
                             {
-                                allProducts.map(allProduct => <Light
+                                allProducts.map(allProduct => <Product
                                     key={allProduct._id}
-                                    light={allProduct}
-                                ></Light>)
+                                    allProduct={allProduct}
+                                ></Product>)
                             }
                         </div>
                         :
