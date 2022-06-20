@@ -7,9 +7,6 @@ import Team from './Team';
 const About = () => {
     return (
         <div className='pt-24'>
-            <div className='w-[1600px] mt-4 mb-4'>
-                <img className='lg:mx-6 lg:w-[1475px]' src="https://i.ibb.co/hmKjLbq/sb.png" alt="" />
-            </div>
             <Hero></Hero>
             <Team></Team>
             <Faq></Faq>
