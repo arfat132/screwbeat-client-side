@@ -9,7 +9,7 @@ const Light = ({ light }) => {
         navigate(`/purchase/${id}`);
     }
     return (
-        <div className="p-4 md:w-1/4">
+        <div className="p-4 lg:w-1/4 md:w-1/2">
             <div className="border border-gray-200 relative">
                 <img className="mb-5" src={img} alt="" />
                 <div className="px-5">
@@ -18,7 +18,7 @@ const Light = ({ light }) => {
                         <span className="bg-primary bg-opacity-20 text-primary text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Stock {quantity}</span>
                         <span className="bg-primary bg-opacity-20 text-primary text-xs font-semibold mr-2 px-2.5 py-0.5 rounded ml-3">Min Order {minOrderQuantity}</span>
                     </div>
-                    <p>{description}</p>
+                    <p>{description.slice(0,100)}...</p>
                     <div className="flex justify-between items-center mb-3 mt-5">
                         <div>
                         <span className="text-3xl font-bold text-gray-900">${price}</span>

@@ -9,8 +9,8 @@ import CountUp from 'react-countup';
 
 const BusinessSummary = () => {
     return (
-        <section className="hero text-white body-font lg:mb-16">
-            <div className="container py-12 mx-auto text-center">
+        <section className="hero text-white body-font lg:mb-16 mt-24 lg:mt-0">
+            <div className="container lg:py-12 mx-auto text-center">
                 <div className="flex flex-col text-center w-full mb-12">
                     <h2 className="text-md text-primary tracking-widest font-bold title-font mb-1 uppercase">Business Summary</h2>
                     <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">Trusted By Worldwide</h1>
