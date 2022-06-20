@@ -5,7 +5,7 @@ const ManageProducts = () => {
     const [manageTools, setManageTools] = useState([]);
 
     useEffect(() => {
-        fetch('https://stormy-dusk-98977.herokuapp.com/tools')
+        fetch('http://localhost:5000/shop')
             .then(res => res.json())
             .then(data => setManageTools(data))
     }, [])
@@ -13,7 +13,7 @@ const ManageProducts = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `https://stormy-dusk-98977.herokuapp.com/tools/${id}`;
+            const url = `http://localhost:5000/shop/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -26,7 +26,7 @@ const ManageProducts = () => {
         }
     }
     return (
-        <div className="overflow-x-auto px-12 pt-12">
+        <div className="overflow-x-auto px-12 pt-28">
             <table className="table table-compact w-full">
                 <thead>
                     <tr>
