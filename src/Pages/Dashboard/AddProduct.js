@@ -57,7 +57,7 @@ const AddProduct = () => {
     }
 
     return (
-        <div className='px-8 py-6 mx-12 mt-6 shadow-md border border-gray-100 w-[650px] mb-10'>
+        <div className='px-8 py-6 mx-4 md:mx-12 lg:mx-12 mt-36 shadow-md border border-gray-100  md:w-[650px] lg:w-[650px] mb-10'>
             <h1 className='mb-5 font-bold text-2xl'>Add a Product</h1>
             <hr className='py-2' />
             <form onSubmit={handleSubmit(onSubmit)}>
@@ -89,7 +89,7 @@ const AddProduct = () => {
                     <label htmlFor="description" className="block text-sm font-medium text-gray-900 ">Description</label>
                     <textarea {...register("description")} name="description" id="" cols="10" rows="5" className="mt-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full"></textarea>
                 </div>
-                <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add Product</button>
+                <button type="submit" className="text-white bg-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center">Add Product</button>
             </form>
             <ToastContainer></ToastContainer>
         </div>

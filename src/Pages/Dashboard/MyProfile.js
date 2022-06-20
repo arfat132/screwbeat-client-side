@@ -75,11 +75,13 @@ const MyProfile = () => {
 
     return (
         <>
-            <div className='px-8 py-8 mx-12 mt-36 shadow-md border border-gray-100 w-[900px]'>
+            <div className='px-8 py-8 mx-12 mt-36 shadow-md border border-gray-100 lg:w-[900px]'>
                 <form onSubmit={handleMyProfile}>
-                    <div className='flex flex-wrap justify-between'>
-                        <div className='w-1/2 pr-6'>
-                            <div className='flex justify-between items-center '> <h1 className='mb-5 font-bold text-2xl'>Personal Information</h1>
+                    <div className='lg:flex flex-wrap justify-between'>
+                        <div className='lg:w-1/2  pr-6'>
+                        <div className='flex justify-between items-center '>
+                                <h1 className='mb-5 font-bold text-2xl'>Personal Information</h1>
+                                <label for="my-modal" class="flex lg:hidden items-center -mt-14 text-primary modal-button mb-2 font-medium text-lg w-full sm:w-auto text-center">Edit<BiEdit className='ml-1' /></label>
                             </div>
                             <hr className='py-3' />
                             <div className="relative z-0 w-full mb-6 group">
@@ -115,9 +117,10 @@ const MyProfile = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-1/2 pl-6'>
-                            <div className='flex justify-between items-center '> <h1 className='mb-5 font-bold text-2xl'>Educational Information</h1>
-                                <label for="my-modal" class="flex items-center -mt-14 text-primary modal-button mb-2 font-medium text-lg w-full sm:w-auto text-center">Edit<BiEdit className='ml-1' /></label>
+                        <div className='lg:w-1/2 lg:pl-6'>
+                            <div className='flex justify-between items-center '>
+                                <h1 className='mb-5 font-bold text-2xl'>Educational Information</h1>
+                                <label for="my-modal" class="lg:flex hidden items-center -mt-14 text-primary modal-button mb-2 font-medium text-lg w-full sm:w-auto text-center">Edit<BiEdit className='ml-1' /></label>
                             </div>
                             <hr className='py-5' />
                             <div className="relative z-0 w-full mb-6 group">

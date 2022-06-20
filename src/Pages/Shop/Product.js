@@ -9,7 +9,7 @@ const Product = ({ allProduct }) => {
         navigate(`/shopPurchase/${id}`);
     }
     return (
-        <div className="p-4 md:w-1/4">
+        <div className="p-4 lg:w-1/4 md:w-1/2">
             <div className="border border-gray-200 relative">
                 <img className="mb-5" src={img} alt="" />
                 <div className="px-5">
