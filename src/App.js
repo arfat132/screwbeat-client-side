@@ -23,6 +23,9 @@ import About from './Pages/About/About';
 import Shop from './Pages/Shop/Shop';
 import Contact from './Pages/Contact/Contact';
 import AllProduct from './Pages/Shop/AllProduct';
+import Bedroom from './Pages/Shop/Category/Bedroom';
+import Ceiling from './Pages/Shop/Category/Ceiling';
+import Table from './Pages/Shop/Category/Table';
 
 function App() {
   return (
@@ -34,6 +37,9 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/shop" element={<Shop />} >
           <Route index element={<AllProduct></AllProduct>}></Route>
+          <Route path="bedroom" element={<Bedroom></Bedroom>}></Route>
+          <Route path="ceiling" element={<Ceiling></Ceiling>}></Route>
+          <Route path="table" element={<Table></Table>}></Route>
         </Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} >

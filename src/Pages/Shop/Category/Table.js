@@ -1,19 +1,17 @@
-import React from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
-import Product from './Product';
+import React, { useEffect, useState } from 'react';
+import Product from '../Product';
 
-const AllProduct = () => {
-    const [allProducts, setProduct] = useState([]);
+const Table = () => {
+    const [table, setTable] = useState([]);
     const [limit, setLimit] = useState(4);
     const [pageNumber, setPageNumber] = useState(0)
     const [sort, setSort] = useState("Featured");
-
+    
     useEffect(() => {
-        fetch("https://stormy-dusk-98977.herokuapp.com/shop")
+        fetch(`https://whispering-tor-70957.herokuapp.com/foods`)
             .then(res => res.json())
-            .then(data => setProduct(data))
-    }, [sort, limit, pageNumber])
+            .then(data => setTable(data.filter(lamp => lamp.category.includes('table'))))
+    }, [table])
     return (
         <div>
             <div className='w-full mt-4 mb-4'>
@@ -55,10 +53,10 @@ const AllProduct = () => {
 
             <div className="text-gray-600 body-font pt-8 auto">
                 <div className="container px-12 pb-16 mx-auto">
-                    {allProducts?.length ?
+                    {table?.length ?
                         <div className="flex flex-wrap -m-4 mb-6">
                             {
-                                allProducts.map(allProduct => <Product
+                                table.map(allProduct => <Product
                                     key={allProduct._id}
                                     allProduct={allProduct}
                                 ></Product>)
@@ -83,4 +81,4 @@ const AllProduct = () => {
     );
 };
 
-export default AllProduct;
+export default Table;

@@ -1,7 +1,8 @@
 [
     {
         "id":1,
-        "name":"Table Lamp Set",
+        "name":"King Lamp",
+        "category":"bed",
         "quantity": 1500,
         "minOrderQuantity": 12,
         "price": 70,
@@ -10,7 +11,8 @@
     },
     {
         "id":2,
-        "name":"Ganeed Ceiling Light",
+        "name":"Reading Light",
+        "category":"table",
         "quantity": 1000,
         "minOrderQuantity": 12,
         "price": 80,
@@ -20,6 +22,7 @@
     {
         "id":3,
         "name":"Pendant  Lights ",
+        "category":"bed",
         "quantity": 1200,
         "minOrderQuantity": 12,
         "price": 55,
@@ -28,7 +31,8 @@
     },
     {
         "id":4,
-        "name":"Vintage Ceiling Light",
+        "name":"Curve Light",
+        "category":"bed",
         "quantity": 1600,
         "minOrderQuantity": 12,
         "price": 60,
@@ -37,7 +41,8 @@
     },
     {
         "id":5,
-        "name":"Reading chair floor lamp",
+        "name":"White lamp",
+        "category":"bed",
         "quantity": 1100,
         "minOrderQuantity": 12,
         "price": 40,
@@ -46,7 +51,8 @@
     },
     {
         "id":6,
-        "name":"Living room lamp",
+        "name":"Pink Flower lamp",
+        "category":"bed",
         "quantity": 900,
         "minOrderQuantity": 12,
         "price": 30,
@@ -55,7 +61,8 @@
     },
     {
         "id":7,
-        "name":"Table reading lamp",
+        "name":"Bedroom lamp",
+        "category":"bed",
         "quantity": 900,
         "minOrderQuantity": 12,
         "price": 30,
@@ -64,7 +71,8 @@
     },
     {
         "id":8,
-        "name":"Elegant Liviging room lamp",
+        "name":"Elegant Table lamp",
+        "category":"table",
         "quantity": 900,
         "minOrderQuantity": 12,
         "price": 30,
@@ -73,7 +81,8 @@
     },
     {
         "id":9,
-        "name":"Table Lamp Set",
+        "name":"Table Lamp",
+        "category":"table",
         "quantity": 1500,
         "minOrderQuantity": 12,
         "price": 70,
@@ -82,7 +91,8 @@
     },
     {
         "id":10,
-        "name":"Ganeed Ceiling Light",
+        "name":"Table Light",
+        "category":"table",
         "quantity": 1000,
         "minOrderQuantity": 12,
         "price": 80,
@@ -92,6 +102,7 @@
     {
         "id":11,
         "name":"Pendant  Lights ",
+        "category":"ceiling",
         "quantity": 1200,
         "minOrderQuantity": 12,
         "price": 55,
@@ -100,7 +111,8 @@
     },
     {
         "id":12,
-        "name":"Vintage Ceiling Light",
+        "name":"Ceiling Light",
+        "category":"ceiling",
         "quantity": 1600,
         "minOrderQuantity": 12,
         "price": 60,
@@ -109,7 +121,8 @@
     },
     {
         "id":13,
-        "name":"Reading chair floor lamp",
+        "name":"Bedroom lamp",
+        "category":"bed",
         "quantity": 1100,
         "minOrderQuantity": 12,
         "price": 40,
@@ -118,7 +131,8 @@
     },
     {
         "id":14,
-        "name":"Living room lamp",
+        "name":"White lamp",
+        "category":"bed",
         "quantity": 900,
         "minOrderQuantity": 12,
         "price": 30,
@@ -127,7 +141,8 @@
     },
     {
         "id":15,
-        "name":"Table reading lamp",
+        "name":"Bedroom lamp",
+        "category":"bed",
         "quantity": 900,
         "minOrderQuantity": 12,
         "price": 30,
@@ -136,7 +151,8 @@
     },
     {
         "id":16,
-        "name":"Elegant Liviging room lamp",
+        "name":"Liviging room lamp",
+        "category":"ceiling",
         "quantity": 900,
         "minOrderQuantity": 12,
         "price": 30,
@@ -145,7 +161,8 @@
     },
     {
         "id":17,
-        "name":"Vintage Ceiling Light",
+        "name":"Drawing Room Lamp",
+        "category":"ceiling",
         "quantity": 1600,
         "minOrderQuantity": 12,
         "price": 60,
@@ -154,7 +171,8 @@
     },
     {
         "id":18,
-        "name":"Reading chair floor lamp",
+        "name":"Living Room lamp",
+        "category":"ceiling",
         "quantity": 1100,
         "minOrderQuantity": 12,
         "price": 40,
@@ -163,7 +181,8 @@
     },
     {
         "id":19,
-        "name":"Living room lamp",
+        "name":"Table lamp",
+        "category":"table",
         "quantity": 900,
         "minOrderQuantity": 12,
         "price": 30,
@@ -172,7 +191,8 @@
     },
     {
         "id":20,
-        "name":"Table reading lamp",
+        "name":"Ceiling lamp",
+        "category":"ceiling",
         "quantity": 900,
         "minOrderQuantity": 12,
         "price": 30,
@@ -181,7 +201,8 @@
     },
     {
         "id":21,
-        "name":"Elegant Liviging room lamp",
+        "name":"Ceiling Golden lamp",
+        "category":"ceiling",
         "quantity": 900,
         "minOrderQuantity": 12,
         "price": 30,

@@ -46,7 +46,7 @@ const MyOrders = () => {
 
 
     return (
-        <div className="overflow-x-auto px-12 pt-12">
+        <div className="overflow-x-auto px-12 pt-28">
             <table className="table table-compact w-full">
                 <thead>
                     <tr>

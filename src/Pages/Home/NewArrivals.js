@@ -5,14 +5,14 @@ const NewArrivals = () => {
     const [allProducts, setProduct] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/shop")
+        fetch("https://stormy-dusk-98977.herokuapp.com/shop")
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [])
     return (
         <div>
             <div class="text-center">
-            <h2 className="text-md text-primary tracking-widest font-bold title-font mb-1 text-center uppercase">New Arrivals</h2>
+                <h2 className="text-md text-primary tracking-widest font-bold title-font mb-1 text-center uppercase">New Arrivals</h2>
                 <h1 className="lg:text-3xl text-xl font-medium title-font text-gray-900 mb-12 text-center">Explore Our New Arrivals Lamps</h1>
             </div>
             <div className='grid lg:grid-cols-4 grid-cols-1 lg:gap-5 lg:px-12 lg:mb-24'>
