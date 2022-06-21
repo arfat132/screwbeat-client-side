@@ -8,7 +8,7 @@ const Table = () => {
     const [sort, setSort] = useState("Featured");
     
     useEffect(() => {
-        fetch(`https://whispering-tor-70957.herokuapp.com/foods`)
+        fetch(`https://stormy-dusk-98977.herokuapp.com/shop`)
             .then(res => res.json())
             .then(data => setTable(data.filter(lamp => lamp.category.includes('table'))))
     }, [table])

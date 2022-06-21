@@ -26,6 +26,9 @@ import AllProduct from './Pages/Shop/AllProduct';
 import Bedroom from './Pages/Shop/Category/Bedroom';
 import Ceiling from './Pages/Shop/Category/Ceiling';
 import Table from './Pages/Shop/Category/Table';
+import Floor from './Pages/Shop/Category/Floor';
+import LampSet from './Pages/Shop/Category/LampSet';
+import Restaurant from './Pages/Shop/Category/Restaurant';
 
 function App() {
   return (
@@ -40,6 +43,9 @@ function App() {
           <Route path="bedroom" element={<Bedroom></Bedroom>}></Route>
           <Route path="ceiling" element={<Ceiling></Ceiling>}></Route>
           <Route path="table" element={<Table></Table>}></Route>
+          <Route path="floor" element={<Floor></Floor>}></Route>
+          <Route path="lampSet" element={<LampSet></LampSet>}></Route>
+          <Route path="restaurant" element={<Restaurant></Restaurant>}></Route>
         </Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} >
