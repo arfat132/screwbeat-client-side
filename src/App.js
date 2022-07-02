@@ -32,7 +32,7 @@ import Restaurant from './Pages/Shop/Category/Restaurant';
 
 function App() {
   return (
-    <div>
+    <div className='flex min-h-screen flex-col justify-between'>
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />}></Route>

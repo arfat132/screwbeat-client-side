@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { IoIosArrowForward } from 'react-icons/io';
-import { AiOutlineMenuUnfold } from 'react-icons/ai';
 const Shop = () => {
     return (
         <div>
             <div>
-                <div className="drawer drawer-mobile pt-20">
+                <div className="drawer drawer-mobile pt-20 lg:pt-24">
                     <input id="dashboard-sidebar" type="checkbox" className="drawer-toggle" />
                     <div className="drawer-content">
                         <div className="content">

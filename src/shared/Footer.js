@@ -76,8 +76,8 @@ const Footer = () => {
       <div className="bg-secondary px-8">
         <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
           <img width="150px" src={logo} alt="" srcSet="" />
-          <p className="text-sm text-primary sm:ml-6 sm:mt-0 mt-4">© 2020 Screwbeat —
-            <Link to='' href="https://twitter.com/knyttneve" rel="noopener noreferrer" className="text-gray-200 ml-1" target="_blank">@screbeat</Link>
+          <p className="text-sm text-primary sm:ml-6 sm:mt-0 mt-4">© 2020 OutLight —
+            <Link to='' href="https://twitter.com/knyttneve" rel="noopener noreferrer" className="text-gray-200 ml-1" target="_blank">@outlight</Link>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <Link to='' className="text-primary">
