@@ -14,7 +14,7 @@ const NewArrivalCard = ({ allProduct }) => {
             <div class="card card-side bg-base-100 shadow-lg rounded-none">
                 <img className='w-36 h-40' src={img} alt="" />
                 <div class="card-body">
-                    <h2 class="text-lg font-bold">{name.slice(0, 13)}..</h2>
+                    <h2 class="text-lg font-bold">{name.slice(0, 11)}..</h2>
                     <div className="flex items-center">
                         <span className="text-primary text-[12px] font-bold">Stock {quantity}</span>
                         <span className="text-primary text-[12px] font-bold ml-2 ">Min Order {minOrderQuantity}</span>

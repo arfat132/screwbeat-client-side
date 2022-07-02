@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../Product';
-
+import { AiOutlineMenuUnfold } from 'react-icons/ai';
 const Restaurant = () => {
     const [restaurant, setRestaurant] = useState([]);
     const [limit, setLimit] = useState(4);
@@ -34,21 +34,21 @@ const Restaurant = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-between bg-gray-200 bg-opacity-60 mt-4 sm:mx-6 md:mx-6 px-4 py-3'>
-                <p className='flex items-center ml-4  text-gray-500'>Paginate by
+            <div className='flex justify-between bg-gray-200 bg-opacity-60 mt-4 mx-0 md:mx-6'>
+                <div className='flex items-center ml-4  text-gray-500'>Paginate by
                     <select onChange={(e) => setLimit(e.target.value)} className="py-2 px-2 ml-3 bg-primary text-white hover:border-none rounded-none">
                         <option>4</option>
                         <option>8</option>
                         <option>12</option>
                         <option>16</option>
                         <option>20</option>
-                    </select></p>
-                <p className='flex items-center text-gray-500'>Sort by
-                    <select onChange={e => setSort(e.target.value)} className="py-2 px-2 ml-3 bg-primary text-white hover:border-none rounded-none">
-                        <option value="featured">Featured</option>
-                        <option value="low">Low to high</option>
-                        <option value="high">High to Low</option>
-                    </select></p>
+                    </select></div>
+                <div className="lg:hidden flex items-center">
+                    <h2 className='text-xl  text-gray-500'>Category</h2>
+                    <label tabIndex="1" for="dashboard-sidebar" className="btn btn-ghost lg:hidden">
+                        <AiOutlineMenuUnfold className='text-2xl text-primary' />
+                    </label>
+                </div>
             </div>
 
             <div className="text-gray-600 body-font pt-8 auto">
