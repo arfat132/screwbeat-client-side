@@ -21,7 +21,7 @@ const AddReviews = () => {
 
         console.log(reviews)
         // send to database 
-        fetch('https://stormy-dusk-98977.herokuapp.com/reviews', {
+        fetch('https://outlight-server-side.vercel.app/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

@@ -3,7 +3,7 @@ import Spinner from '../Spinner/Spinner';
 import { useQuery } from 'react-query';
 import User from './User';
 const MakeAdmin = () => {
-    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://stormy-dusk-98977.herokuapp.com/users', {
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://outlight-server-side.vercel.app/users', {
         method: 'GET',
 
     }).then(res => res.json()));
@@ -15,7 +15,7 @@ const MakeAdmin = () => {
 
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `https://stormy-dusk-98977.herokuapp.com/users/${id}`;
+            const url = `https://outlight-server-side.vercel.app/users/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

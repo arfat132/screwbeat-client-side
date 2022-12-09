@@ -33,7 +33,7 @@ const AddProduct = () => {
                     }
                     console.log(tools)
                     // send to database 
-                    fetch('https://stormy-dusk-98977.herokuapp.com/tools', {
+                    fetch('https://outlight-server-side.vercel.app/tools', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',

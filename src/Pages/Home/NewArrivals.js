@@ -5,7 +5,7 @@ const NewArrivals = () => {
     const [allProducts, setProduct] = useState([]);
 
     useEffect(() => {
-        fetch("https://stormy-dusk-98977.herokuapp.com/shop")
+        fetch("https://outlight-server-side.vercel.app/shop")
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [])

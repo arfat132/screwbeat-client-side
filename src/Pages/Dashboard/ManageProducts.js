@@ -5,7 +5,7 @@ const ManageProducts = () => {
     const [manageTools, setManageTools] = useState([]);
 
     useEffect(() => {
-        fetch('https://stormy-dusk-98977.herokuapp.com/shop')
+        fetch('https://outlight-server-side.vercel.app/shop')
             .then(res => res.json())
             .then(data => setManageTools(data))
     }, [])
@@ -13,7 +13,7 @@ const ManageProducts = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `https://stormy-dusk-98977.herokuapp.com/shop/${id}`;
+            const url = `https://outlight-server-side.vercel.app/shop/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

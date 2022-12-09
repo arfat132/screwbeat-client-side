@@ -9,7 +9,7 @@ const AllProduct = () => {
     const [pageNumber, setPageNumber] = useState(0)
 
     useEffect(() => {
-        fetch(`https://stormy-dusk-98977.herokuapp.com/shop?limit=${limit}&pageNumber=${pageNumber}`)
+        fetch(`https://outlight-server-side.vercel.app/shop?limit=${limit}&pageNumber=${pageNumber}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [limit, pageNumber])

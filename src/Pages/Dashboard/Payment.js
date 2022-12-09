@@ -11,7 +11,7 @@ const stripePromise = loadStripe('pk_test_51L1mOcDu5yL5XYbRIfzSnxzy8K6KQulgGFGnh
 
 const Payment = () => {
     const { id } = useParams();
-    const url = `https://stormy-dusk-98977.herokuapp.com/orders/${id}`;
+    const url = `https://outlight-server-side.vercel.app/orders/${id}`;
 
     const { data: orders, isLoading } = useQuery(['order', id], () => fetch(url, {
         method: 'GET',
@@ -23,7 +23,7 @@ const Payment = () => {
 
     return (
         <section className="text-gray-600 body-font">
-            <div className="container px-12 pb-24 pt-12 mx-auto">
+            <div className="container px-12 p-24 mx-auto">
                 <div className="flex flex-wrap -mx-4 -mb-10">
                     <div className="p-4 md:w-1/2">
                         <div className="lg:h-[400px] sm:h-[700px] shadow-md rounded-md border border-gray-200">

@@ -12,7 +12,7 @@ const Purchase = () => {
     const [user] = useAuthState(auth);
 
     useEffect(() => {
-        fetch(`https://stormy-dusk-98977.herokuapp.com/shop/${id}`)
+        fetch(`https://outlight-server-side.vercel.app/shop/${id}`)
             .then(res => res.json())
             .then(data => setToolsDetails(data))
     }, [id, toolsDetails])
@@ -34,7 +34,7 @@ const Purchase = () => {
 
         console.log(orderDetails)
         // send to database 
-        fetch('https://stormy-dusk-98977.herokuapp.com/orders', {
+        fetch('https://outlight-server-side.vercel.app/orders', {
             method: 'POST',
             headers: {//
                 'content-type': 'application/json',

@@ -8,7 +8,7 @@ const Floor = () => {
     const [sort, setSort] = useState("Featured");
 
     useEffect(() => {
-        fetch(`https://stormy-dusk-98977.herokuapp.com/shop`)
+        fetch(`https://outlight-server-side.vercel.app/shop`)
             .then(res => res.json())
             .then(data => setFloor(data.filter(lamp => lamp.category.includes('floor'))))
     }, [floor, limit, pageNumber])

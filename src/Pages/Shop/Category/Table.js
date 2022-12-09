@@ -6,9 +6,9 @@ const Table = () => {
     const [limit, setLimit] = useState(4);
     const [pageNumber, setPageNumber] = useState(0)
     const [sort, setSort] = useState("Featured");
-    
+
     useEffect(() => {
-        fetch(`https://stormy-dusk-98977.herokuapp.com/shop`)
+        fetch(`https://outlight-server-side.vercel.app/shop`)
             .then(res => res.json())
             .then(data => setTable(data.filter(lamp => lamp.category.includes('table'))))
     }, [table])

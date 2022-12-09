@@ -8,7 +8,7 @@ const User = ({ user, refetch, handleDelete }) => {
     const { email, _id, role } = user;
 
     const makeAdmin = () => {
-        fetch(`https://stormy-dusk-98977.herokuapp.com/users/admin/${email}`, {
+        fetch(`https://outlight-server-side.vercel.app/users/admin/${email}`, {
             method: 'PUT',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

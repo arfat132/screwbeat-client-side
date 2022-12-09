@@ -8,7 +8,7 @@ const Restaurant = () => {
     const [sort, setSort] = useState("Featured");
 
     useEffect(() => {
-        fetch(`https://stormy-dusk-98977.herokuapp.com/shop?limit=${limit}&pageNumber=${pageNumber}`)
+        fetch(`https://outlight-server-side.vercel.app/shop?limit=${limit}&pageNumber=${pageNumber}`)
             .then(res => res.json())
             .then(data => setRestaurant(data.filter(lamp => lamp.category.includes('restaurant'))))
     }, [restaurant, limit, pageNumber])

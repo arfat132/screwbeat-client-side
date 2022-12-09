@@ -25,7 +25,7 @@ const MyProfile = () => {
             currentYear: event.target.currentYear.value,
         }
         console.log(myProfile)
-        axios.post('https://stormy-dusk-98977.herokuapp.com/myProfile', myProfile)
+        axios.post('https://outlight-server-side.vercel.app/myProfile', myProfile)
             .then(response => {
                 console.log(response)
                 const { data } = response;
@@ -56,7 +56,7 @@ const MyProfile = () => {
         }
         console.log(updateProfile)
         const email = user.email
-        const url = `https://stormy-dusk-98977.herokuapp.com/myProfile/${email}`;
+        const url = `https://outlight-server-side.vercel.app/myProfile/${email}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -79,7 +79,7 @@ const MyProfile = () => {
                 <form onSubmit={handleMyProfile}>
                     <div className='lg:flex flex-wrap justify-between'>
                         <div className='lg:w-1/2  pr-6'>
-                        <div className='flex justify-between items-center '>
+                            <div className='flex justify-between items-center '>
                                 <h1 className='mb-5 font-bold text-2xl'>Personal Information</h1>
                                 <label for="my-modal" class="flex lg:hidden items-center -mt-14 text-primary modal-button mb-2 font-medium text-lg w-full sm:w-auto text-center">Edit<BiEdit className='ml-1' /></label>
                             </div>
